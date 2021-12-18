@@ -2,36 +2,62 @@ import React from "react";
 import "./login.scss";
 import { FaTwitter, FaFacebook, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const handleLogin = (data) => console.log("data:", data);
+
+  const registerOptions = {
+    email: { required: "Email is required" },
+    password: { required: "Password is required" },
+  };
+
   return (
     <div className="form-cntr">
-      <form action="/message.html" onsubmit="" className="login-form">
+      <form
+        onSubmit={handleSubmit(handleLogin)}
+        className="login-form">
         <h3>LOGIN</h3>
         <div className="group1">
+          <label className="email-lbl" htmlFor="email" hidden></label>
           <input
             className="email"
-            name="email"
             type="email"
             placeholder="email"
-            required
+            {...register("userEmail", registerOptions.email)}
           />
-          <label className="email-lbl" htmlFor="email"></label>
+          <p className="error-message">
+            {errors.userEmail && errors.userEmail.message}
+          </p>
+
+          <label className="password-lbl" htmlFor="password" hidden></label>
           <input
             className="password"
-            name="password"
             type="password"
             placeholder="password"
-            required
+            {...register("userPassword", registerOptions.password)}
           />
-          <label className="password-lbl" htmlFor="password"></label>
+          <p className="error-message">
+            {errors.userPassword && errors.userPassword.message}
+          </p>
+
           <button className="signin-btn" type="submit">
             Login
           </button>
         </div>
         <div className="group2">
           {/* remember me checkbox */}
-          <input className="rmmbr-me" type="checkbox" />
+          <input
+            className="rmmbr-me"
+            type="checkbox"
+            {...register("rmmbrUser")}
+          />
           <label htmlFor="form-check-input">remember me</label>
           {/* forgot password */}
           <p className="forgot-password">

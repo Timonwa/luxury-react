@@ -85,15 +85,6 @@ $btn: hsla(195, 50%, 35%, 0.6);
   .group1 {
     display: flex;
     flex-direction: column;
-    label {
-      margin: 0 5px 0;
-      padding: 0px 5px;
-      width: 240px;
-      font-size: 12px;
-      height: 20px;
-      color: red;
-      display: none;
-    }
     input,
     button {
       margin: 15px 10px;
@@ -106,6 +97,14 @@ $btn: hsla(195, 50%, 35%, 0.6);
       -ms-border-radius: 2px;
       -o-border-radius: 2px;
       font-size: 16px;
+    }
+    .error-message {
+      background-color: rgba(0, 0, 0, 0.548);
+      color: #ff4400;
+      font-size: 0.75em;
+      margin: 0px 10px;
+      padding: 0;
+      width: 240px;
     }
     input {
       margin-bottom: 0;
