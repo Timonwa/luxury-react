@@ -73,7 +73,7 @@ const Footer = () => {
         </address>
 
         {/* the name of the designer of the website */}
-        <p className="designer">Designed by Pelumi Akintokun</p>
+        <p className="designer">Designed by <a href="http://timonwa.vercel.app" target="_blank">Timonwa</a></p>
       </div>
     </footer>
   );
