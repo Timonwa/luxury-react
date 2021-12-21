@@ -13,7 +13,8 @@ const Login = () => {
     mode: "onTouched",
   });
 
-  const handleLogin = (data) => {
+  const handleLogin = (event, data) => {
+    event.preventDefault();
     console.log("data:", data);
     alert(
       `userEmail: "${data.userEmail}" \n
@@ -38,7 +39,7 @@ const Login = () => {
       <form onSubmit={handleSubmit(handleLogin)} className="login-form">
         <h3>LOGIN</h3>
         <div className="group1">
-          <label className="email-lbl" htmlFor="email" hidden></label>
+          <label className="email-lbl" for="email" hidden></label>
           <input
             className="email"
             type="email"
@@ -49,7 +50,7 @@ const Login = () => {
             {errors.userEmail && errors.userEmail.message}
           </p>
 
-          <label className="password-lbl" htmlFor="password" hidden></label>
+          <label className="password-lbl" for="password" hidden></label>
           <input
             className="password"
             type="password"
@@ -64,6 +65,7 @@ const Login = () => {
             Login
           </button>
         </div>
+
         <div className="group2">
           {/* remember me checkbox */}
           <input
@@ -71,17 +73,19 @@ const Login = () => {
             type="checkbox"
             {...register("rmmbrUser")}
           />
-          <label htmlFor="form-check-input">remember me</label>
+          <label for="form-check-input">remember me</label>
+          
           {/* forgot password */}
           <p className="forgot-password">
             <Link to="/forgot-password">forgot password?</Link>
           </p>
         </div>
+
         <div className="group3">
           {/* sign up link  */}
           <p>
             not registered?{" "}
-            <Link to="/signup" className="signup" href="/html/signup.html">
+            <Link to="/signup" className="signup">
               Sign Up
             </Link>
           </p>

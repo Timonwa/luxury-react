@@ -68,10 +68,10 @@ $btn: hsla(195, 50%, 35%, 0.6);
     font-size: 0.75rem;
     margin: 0px 10px;
     padding: 0;
-    width: 240px;
+    width: 100%;
   }
 
-  .login-form {
+  .signup-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,16 +126,29 @@ $btn: hsla(195, 50%, 35%, 0.6);
     }
   }
 
-  .group2 {
+  .group2-signup {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 12px;
-    .forgot-password {
-      text-decoration: underline;
+    width: 100%;
+    .terms,
+    .our-services {
+      display: flex;
+    }
+    .our-services {
+      margin-top: 15px;
+      span {
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 5px;
+      }
     }
     label,
     p {
-      margin: 0 5px 5px;
+      margin: 0 0 5px;
+    }
+    label {
+      margin-left: 5px;
     }
   }
 
@@ -147,7 +160,7 @@ $btn: hsla(195, 50%, 35%, 0.6);
     align-items: center;
     margin-top: 30px;
 
-    .signin {
+    .signup {
       font-size: 16px;
       font-weight: bold;
     }
@@ -184,12 +197,5 @@ $btn: hsla(195, 50%, 35%, 0.6);
         background-color: $google;
       }
     }
-  }.error-message {
-    background-color: rgba(0, 0, 0, 0.548);
-    color: #f11313;
-    font-size: 0.75rem;
-    margin: 0px 10px;
-    padding: 0;
-    width: 100%;
   }
 }
