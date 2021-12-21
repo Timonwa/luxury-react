@@ -11,18 +11,29 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const handleLogin = (data) => console.log("data:", data);
+  const handleLogin = (data) => {
+    console.log("data:", data);
+    alert(
+      `userEmail: "${data.userEmail}" \n
+      userPassword: "${data.userPassword}" \n
+      remember user: "${data.rmmbrUser}"`
+    );
+  };
 
   const registerOptions = {
-    email: { required: "Email is required" },
+    email: {
+      required: "Email is required",
+      pattern: {
+        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+        message: "Invalid email",
+      },
+    },
     password: { required: "Password is required" },
   };
 
   return (
     <div className="form-cntr">
-      <form
-        onSubmit={handleSubmit(handleLogin)}
-        className="login-form">
+      <form onSubmit={handleSubmit(handleLogin)} className="login-form">
         <h3>LOGIN</h3>
         <div className="group1">
           <label className="email-lbl" htmlFor="email" hidden></label>
@@ -75,14 +86,14 @@ const Login = () => {
           {/* sign in/sign up using facebook, twitter or google */}
           <p>or sign in using</p>
           <p className="social-signin">
-            <a href="https://example.com">
-              <FaTwitter className="icon twitter-signin" />
+            <a className="twitter-signin" href="https://example.com">
+              <FaTwitter className="icon" />
             </a>
-            <a href="https://example.com">
-              <FaFacebook className="icon fb-signin" />
+            <a className="fb-signin" href="https://example.com">
+              <FaFacebook className="icon" />
             </a>
-            <a href="https://example.com">
-              <FaGoogle className="icon google-signin" />
+            <a className="google-signin" href="https://example.com">
+              <FaGoogle className="icon" />
             </a>
           </p>
         </div>

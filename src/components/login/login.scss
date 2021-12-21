@@ -157,34 +157,31 @@ $btn: hsla(195, 50%, 35%, 0.6);
       align-items: center;
       justify-content: center;
       a {
-        width: 30px;
-        height: 30px;
-      }
-      .icon {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
+        width: 30px;
+        height: 30px;
         margin: 0px 5px;
-        width: 1rem;
-        height: 1rem;
         color: $white;
         border-radius: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         -ms-border-radius: 2px;
         -o-border-radius: 2px;
+        .icon {
+          font-size: 1rem;
+        }
       }
-    }
-    .twitter-signin {
-      background-color: $twitter;
-    }
-    .fb-signin {
-      background-color: $facebook;
-    }
-    .google-signin {
-      background-color: $google;
+      .twitter-signin {
+        background-color: $twitter;
+      }
+      .fb-signin {
+        background-color: $facebook;
+      }
+      .google-signin {
+        background-color: $google;
+      }
     }
   }
 }
