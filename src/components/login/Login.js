@@ -9,7 +9,9 @@ const Login = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    mode: "onTouched",
+  });
 
   const handleLogin = (data) => {
     console.log("data:", data);

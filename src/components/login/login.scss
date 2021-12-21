@@ -23,7 +23,7 @@ $main-post-bgc: #f2f2f2;
 $search-dropdown-bgc: #eeeeeed2;
 $header-btn-bdr-color: #404b4f80;
 $search-btn-bgc: #2d7087e6;
-$filter-btn-bgc: #fffffad;
+$filter-btn-bgc: #ffffffad;
 
 // table color
 $table-header: #8cafbb;
@@ -100,7 +100,7 @@ $btn: hsla(195, 50%, 35%, 0.6);
     }
     .error-message {
       background-color: rgba(0, 0, 0, 0.548);
-      color: #ff4400;
+      color: #f11313;
       font-size: 0.75em;
       margin: 0px 10px;
       padding: 0;
@@ -163,7 +163,7 @@ $btn: hsla(195, 50%, 35%, 0.6);
         width: 30px;
         height: 30px;
         margin: 0px 5px;
-        color: $white;
+        color:#fff;
         border-radius: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
