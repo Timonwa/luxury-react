@@ -38,14 +38,6 @@ const SignUp = () => {
   const registerOptions = {
     name: {
       required: "Name is required",
-      minLength: {
-        value: 8,
-        message: "Name must be longer than 8 characters",
-      },
-      maxLength: {
-        value: 20,
-        message: "Name must be less than 20 characters",
-      },
     },
     email: {
       required: "Email is required",

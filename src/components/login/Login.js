@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.scss";
-import { FaTwitter, FaFacebook, FaGoogle } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaFacebook,
+  FaGoogle,
+  FaEyeSlash,
+  FaEye,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
+  const [viewPassword, setViewPassword] = useState(false);
+  const handlePassword = () => {
+    setViewPassword(!viewPassword);
+  };
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm({
-    mode: "onTouched",
+    mode: "onChange",
   });
 
-  const handleLogin = (event, data) => {
-    event.preventDefault();
-    console.log("data:", data);
-    alert(
-      `userEmail: "${data.userEmail}" \n
-      userPassword: "${data.userPassword}" \n
-      remember user: "${data.rmmbrUser}"`
-    );
+  const handleLogin = (data) => {
+    alert(JSON.stringify(data));
   };
 
   const registerOptions = {
@@ -39,31 +44,45 @@ const Login = () => {
       <form onSubmit={handleSubmit(handleLogin)} className="login-form">
         <h3>LOGIN</h3>
         <div className="group1">
-          <label className="email-lbl" for="email" hidden></label>
-          <input
-            className="email"
-            type="email"
-            placeholder="email"
-            {...register("userEmail", registerOptions.email)}
-          />
+          <div className="form-input-group">
+            <label className="form-input-label" for="email" hidden></label>
+            <input
+              className="form-input"
+              type="email"
+              placeholder="email"
+              {...register("userEmail", registerOptions.email)}
+            />
+          </div>
           <p className="error-message">
             {errors.userEmail && errors.userEmail.message}
           </p>
 
-          <label className="password-lbl" for="password" hidden></label>
-          <input
-            className="password"
-            type="password"
-            placeholder="password"
-            {...register("userPassword", registerOptions.password)}
-          />
+          <div className="form-input-group">
+            <label className="form-input-label" for="password" hidden></label>
+            <input
+              className="form-input"
+              type={!viewPassword ? "password" : "text"}
+              placeholder="password"
+              {...register("userPassword", registerOptions.password)}
+            />
+            {!viewPassword ? (
+              <FaEyeSlash
+                className="icon view-password"
+                onClick={handlePassword}
+              />
+            ) : (
+              <FaEye className="icon view-password" onClick={handlePassword} />
+            )}
+          </div>
           <p className="error-message">
             {errors.userPassword && errors.userPassword.message}
           </p>
 
-          <button className="signin-btn" type="submit">
-            Login
-          </button>
+          <div className="form-input-group">
+            <button className="signin-btn" type="submit">
+              Login
+            </button>
+          </div>
         </div>
 
         <div className="group2">
@@ -74,7 +93,7 @@ const Login = () => {
             {...register("rmmbrUser")}
           />
           <label for="form-check-input">remember me</label>
-          
+
           {/* forgot password */}
           <p className="forgot-password">
             <Link to="/forgot-password">forgot password?</Link>

@@ -89,119 +89,121 @@ $btn: hsla(195, 50%, 35%, 0.6);
     h3 {
       font-weight: bold;
     }
-  }
 
-  .group1 {
-    display: flex;
-    flex-direction: column;
-    .form-input-group {
-      position: relative;
-      .view-password {
-        position: absolute;
-        top: 1.5em;
-        right: 15px;
-      }
-    }
-    .form-input {
-      margin: 15px 10px;
-      padding: 7px 10px;
-      width: 240px;
-      border: none;
-      border-radius: 2px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      -o-border-radius: 2px;
-      font-size: 16px;
-    }
-    .form-input {
-      margin-bottom: 0;
-      background-color: $input-bgc;
-    }
-    .form-input:focus {
-      background-color: $input-bgc;
-    }
-    button {
-      margin-top: 25px;
-      margin-bottom: 10px;
-      background-color: $btn;
-      color: $white;
-      font-weight: bold;
-    }
-    ::placeholder {
-      color: $white;
-    }
-  }
-
-  .group2-signup {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    width: 100%;
-    .terms,
-    .our-services {
+    .group1 {
       display: flex;
-    }
-    .our-services {
-      margin-top: 15px;
-      span {
-        font-weight: bold;
-        text-align: left;
-        margin-bottom: 5px;
+      flex-direction: column;
+      .form-input-group {
+        position: relative;
+        .view-password {
+          position: absolute;
+          top: 1.5em;
+          right: 15px;
+        }
       }
-    }
-    label,
-    p {
-      margin: 0 0 5px;
-    }
-    label {
-      margin-left: 5px;
-    }
-  }
 
-  .group3 {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-
-    .signup {
-      font-size: 16px;
-      font-weight: bold;
-    }
-    .social-signin {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: center;
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30px;
-        height: 30px;
-        margin: 0px 5px;
-        color: #fff;
+      input,
+      button {
+        margin: 15px 10px;
+        padding: 7px 10px;
+        width: 240px;
+        border: none;
         border-radius: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         -ms-border-radius: 2px;
         -o-border-radius: 2px;
-        .icon {
-          font-size: 1rem;
+        font-size: 16px;
+      }
+      input {
+        margin-bottom: 0;
+        background-color: $input-bgc;
+      }
+      input:focus {
+        background-color: $input-bgc;
+      }
+      button {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        background-color: $btn;
+        color: $white;
+        font-weight: bold;
+      }
+      ::placeholder {
+        color: $white;
+      }
+    }
+
+    .group2-signup {
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      width: 100%;
+      .terms,
+      .our-services {
+        display: flex;
+      }
+      .our-services {
+        margin-top: 15px;
+        span {
+          font-weight: bold;
+          text-align: left;
+          margin-bottom: 5px;
         }
       }
-      .twitter-signin {
-        background-color: $twitter;
+      label,
+      p {
+        margin: 0 0 5px;
       }
-      .fb-signin {
-        background-color: $facebook;
+      label {
+        margin-left: 5px;
       }
-      .google-signin {
-        background-color: $google;
+    }
+
+    .group3 {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+
+      .signin {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .social-signin {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          margin: 0px 5px;
+          color: #fff;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+          .icon {
+            font-size: 1rem;
+          }
+        }
+        .twitter-signin {
+          background-color: $twitter;
+        }
+        .fb-signin {
+          background-color: $facebook;
+        }
+        .google-signin {
+          background-color: $google;
+        }
       }
     }
   }
