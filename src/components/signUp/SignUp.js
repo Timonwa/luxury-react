@@ -8,20 +8,17 @@ const SignUp = () => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm({
-    mode: "onTouched",
+    mode: "onChange",
   });
 
-  const handleSignUp = (event, data) => {
-    event.preventDefault();
-    console.log("data:", data);
-    alert(
-      `userEmail: "${data.userEmail}" \n
-      userPassword: "${data.userPassword}" \n
-      remember user: "${data.rmmbrUser}"`
-    );
+  const handleSignUp = (data) => {
+    alert(JSON.stringify(data));
   };
+
+  const password = watch("userPassword");
 
   const registerOptions = {
     name: {
@@ -52,16 +49,18 @@ const SignUp = () => {
         value: 20,
         message: "Password must be less than 20 characters",
       },
-      pattern: "",
+      pattern: {
+        value: /^(\S)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])/,
+        message:
+          "Password must contain 1 lowercase, 1 uppercase, and 1 numeric character",
+      },
     },
     confirmPassword: {
       required: "Confirm password is required",
+      validate: (value) => value === password || "Passwords must match",
     },
     acceptTerms: {
       required: "You must accept the terms and conditions",
-    },
-    userService: {
-      required: "Please pick a service",
     },
   };
 
@@ -152,7 +151,8 @@ const SignUp = () => {
               className="signIn-radio"
               type="radio"
               value="looking"
-              {...register("userService", registerOptions.userService)}
+              checked
+              {...register("userService")}
             />
             <label className="">looking for accommodation.</label>
 
@@ -164,9 +164,6 @@ const SignUp = () => {
             />
             <label className="">offering accommodation.</label>
           </div>
-          <p className="error-message">
-            {errors.userService && errors.userService.message}
-          </p>
         </div>
 
         <div className="group3">
