@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./signUp.scss";
+import "./SignUp.scss";
 import {
   FaTwitter,
   FaFacebook,

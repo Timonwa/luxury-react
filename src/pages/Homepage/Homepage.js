@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import NavBar from "../../components/navBar/NavBar";
-import "./homepage.scss";
+import NavBar from "../../components/NavBar/NavBar";
+import "./Homepage.scss";
 
 const Homepage = () => {
   return (
