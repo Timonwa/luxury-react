@@ -1,0 +1,20 @@
+// form variables
+$color: #d5dce2;
+$glass-color: hsla(0, 0%, 0%, 0.3);
+$blur: 7px;
+$blur: 2px;
+$input-bgc: hsla(0, 0%, 100%, 0.25);
+$btn: hsla(195, 50%, 35%, 0.6);
+$main-bgc3-dark-blue: #607279;
+
+.login-page {
+  min-height: 100vh;
+  color: $color;
+  overflow: hidden;
+  font-size: 16px;
+  background-color: $main-bgc3-dark-blue;
+  background-image: url("../../../assets/imgs/bg-photos/form-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
