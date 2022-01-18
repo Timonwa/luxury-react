@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/navBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
 import "./Homepage.scss";
 
