@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import "./Footer.scss";
 import {
@@ -37,8 +38,9 @@ const Footer = () => {
               <a
                 className="socials fb"
                 alt="facebook handle"
-                href="#"
-                target="_blank">
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer">
                 <FaFacebookSquare className="icons" />
               </a>
             </li>
@@ -46,8 +48,9 @@ const Footer = () => {
               <a
                 className="socials ig"
                 alt="instagram handle"
-                href="#"
-                target="_blank">
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer">
                 <FaInstagram className="icons" />
               </a>
             </li>
@@ -55,8 +58,9 @@ const Footer = () => {
               <a
                 className="socials twitter"
                 alt="twitter handle"
-                href="#"
-                target="_blank">
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer">
                 <FaTwitterSquare className="icons" />
               </a>
             </li>
@@ -64,8 +68,9 @@ const Footer = () => {
               <a
                 className="socials whatsapp"
                 alt="whatsapp handle"
-                href="#"
-                target="_blank">
+                href="https://example.com"
+                target="_blank"
+                rel="noreferrer">
                 <FaWhatsappSquare className="icons" />
               </a>
             </li>
@@ -73,7 +78,12 @@ const Footer = () => {
         </address>
 
         {/* the name of the designer of the website */}
-        <p className="designer">Designed by <a href="http://timonwa.vercel.app" target="_blank">Timonwa</a></p>
+        <p className="designer">
+          Designed by{" "}
+          <a href="http://timonwa.vercel.app" target="_blank" rel="noreferrer">
+            Timonwa
+          </a>
+        </p>
       </div>
     </footer>
   );
