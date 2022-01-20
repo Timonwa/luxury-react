@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
 import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
+import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./Homepage.scss";
 
 const Homepage = () => {
@@ -22,6 +23,7 @@ const Homepage = () => {
         </div>
       </header>
       <WhatWeDo />
+      <RegisterCTA />
       <Footer />
     </div>
   );

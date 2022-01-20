@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
+import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./ListingsPage.scss";
 
 const ListingsPage = () => {
@@ -14,6 +15,7 @@ const ListingsPage = () => {
           <SearchCard />
         </div>
       </header>
+      <RegisterCTA />
       <Footer />
     </div>
   );
