@@ -45,10 +45,10 @@ $main-font: sans-serif;
 /* * reviews section */
 .company-reviews-section {
   background-color: $main-post-bgc-eee;
+  padding: $section-div-margin;
   width: 100%;
-  border: 1px solid #000;
   .company-reviews-section-wrapper {
-    margin: $section-div-margin;
+    // margin:;
     padding: $section-div-padding;
     display: flex;
     flex-direction: column;
@@ -175,8 +175,8 @@ $main-font: sans-serif;
 @media screen and (max-width: 900px) {
   $section-div-margin: 20px 100px 30px;
   .company-reviews-section {
+    padding: $section-div-margin;
     .company-reviews-section-wrapper {
-      margin: $section-div-margin;
       padding: $section-div-padding;
     }
   }
@@ -184,8 +184,9 @@ $main-font: sans-serif;
 @media screen and (max-width: 768px) {
   $section-div-margin: 20px 80px 30px;
   .company-reviews-section {
+    padding: $section-div-margin;
     .company-reviews-section-wrapper {
-      margin: $section-div-margin;
+      padding: $section-div-padding;
     }
   }
 }
@@ -193,8 +194,8 @@ $main-font: sans-serif;
   $section-div-margin: 20px 50px 30px;
   $section-div-padding: 20px;
   .company-reviews-section {
+    padding: $section-div-margin;
     .company-reviews-section-wrapper {
-      margin: $section-div-margin;
       padding: $section-div-padding;
     }
   }
@@ -204,8 +205,8 @@ $main-font: sans-serif;
   $section-div-margin: 30px 20px;
   $section-div-padding: 0px;
   .company-reviews-section {
+    padding: $section-div-margin;
     .company-reviews-section-wrapper {
-      margin: $section-div-margin;
       padding: $section-div-padding;
     }
     .company-reviews-cntr {

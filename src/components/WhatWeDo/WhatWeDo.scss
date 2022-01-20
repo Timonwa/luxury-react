@@ -45,9 +45,8 @@ $main-font: sans-serif;
 /* * about section */
 .about-section {
   background-color: $main-bgc2-white;
-
+  padding: $section-div-margin;
   .about-section-wrapper {
-    margin: $section-div-margin;
     padding: $section-div-padding;
     flex-direction: column;
     justify-content: center;
@@ -84,8 +83,8 @@ $main-font: sans-serif;
 @media screen and (max-width: 900px) {
   $section-div-margin: 20px 100px 30px;
   .about-section {
+    padding: $section-div-margin;
     .about-section-wrapper {
-      margin: $section-div-margin;
       padding: $section-div-padding;
     }
   }
@@ -93,8 +92,8 @@ $main-font: sans-serif;
 @media screen and (max-width: 768px) {
   $section-div-margin: 20px 80px 30px;
   .about-section {
+    padding: $section-div-margin;
     .about-section-wrapper {
-      margin: $section-div-margin;
       padding: $section-div-padding;
     }
   }
@@ -103,8 +102,8 @@ $main-font: sans-serif;
   $section-div-margin: 20px 50px 30px;
   $section-div-padding: 20px;
   .about-section {
+    padding: $section-div-margin;
     .about-section-wrapper {
-      margin: $section-div-margin;
       padding: $section-div-padding;
     }
     .about-us-ctnr {
@@ -129,8 +128,8 @@ $main-font: sans-serif;
   $section-div-margin: 30px 20px;
   $section-div-padding: 0px;
   .about-section {
+    padding: $section-div-margin;
     .about-section-wrapper {
-      margin: $section-div-margin;
       padding: $section-div-padding;
     }
   }

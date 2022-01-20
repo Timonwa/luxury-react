@@ -1,5 +1,5 @@
 import React from "react";
-import "./WhatWeDo.scss"
+import "./WhatWeDo.scss";
 import search from "../../assets/imgs/about/search.png";
 import save from "../../assets/imgs/about/save.png";
 import book from "../../assets/imgs/about/book.png";
@@ -8,7 +8,7 @@ import move from "../../assets/imgs/about/move-in.png";
 
 const WhatWeDo = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <div className="about-section-wrapper">
         <h3 className="section-title">About</h3>
         <div className="about-us">
