@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
+import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
 import "./Homepage.scss";
 
 const Homepage = () => {
@@ -20,6 +21,7 @@ const Homepage = () => {
           <SearchCard />
         </div>
       </header>
+      <WhatWeDo />
       <Footer />
     </div>
   );
