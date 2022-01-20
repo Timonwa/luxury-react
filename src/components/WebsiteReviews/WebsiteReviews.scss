@@ -1,0 +1,247 @@
+// variables
+// main bg and color variables
+$main-bgc1-grey: rgb(252, 245, 245);
+$main-bgc2-white: rgb(255, 254, 254);
+$main-bgc3-dark-blue: #607279;
+$main-bgc4-lighter-blue: #8cafbb;
+$main-color1-black: rgb(15, 15, 15);
+$main-color2-light-blue: #25b0d3;
+$main-color2-light-blue2: #107bff;
+$main-color3-grey: rgb(153, 153, 153);
+$main-color4-red: #f11313;
+$main-color4-silver: #6c757d;
+$main-color5-green: #008000;
+$main-color6-inactive: rgb(202, 202, 202);
+$black-linear-gradient: linear-gradient(45deg, #607279, black);
+$white: #fff;
+$black: #000;
+$main-bdr: solid #ddd;
+$main-post-bgc-eee: #eee;
+$main-post-bgc: #f2f2f2;
+
+// search form colors
+$search-dropdown-bgc: #eeeeeed2;
+$header-btn-bdr-color: #404b4f80;
+$search-btn-bgc: #2d7087e6;
+$filter-btn-bgc: #ffffffad;
+
+// table color
+$table-header: #8cafbb;
+$chat-btn: #25b0d3;
+
+// social media brand colors
+$twitter: #55acee;
+$facebook: #3b5999;
+$google: #dd4b39;
+
+// dimensions
+$nav-height: 40px;
+$section-div-margin: 20px 150px 30px;
+$section-div-padding: 20px;
+
+// fonts
+$main-font: sans-serif;
+
+/* * reviews section */
+.company-reviews-section {
+  background-color: $main-post-bgc-eee;
+  width: 100%;
+  border: 1px solid #000;
+  .company-reviews-section-wrapper {
+    margin: $section-div-margin;
+    padding: $section-div-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .company-reviews-cntr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+    margin: 10px;
+  }
+  //   .prev-btn {
+  //     visibility: hidden;
+  //     position: absolute;
+  //     z-index: 99;
+  //     top: 50%;
+  //     left: 0px;
+  //     color: $main-color4-silver;
+  //     padding: 5px;
+  //     border: 1px $main-bdr;
+  //     font-size: 8px;
+  //     background-color: rgba(128, 128, 128, 0.3);
+  //   }
+  //   .next-btn {
+  //     visibility: hidden;
+  //     position: absolute;
+  //     z-index: 99;
+  //     top: 50%;
+  //     right: 0px;
+  //     color: $main-color4-silver;
+  //     padding: 5px;
+  //     border: 1px $main-bdr;
+  //     font-size: 8px;
+  //     background-color: rgba(128, 128, 128, 0.3);
+  //   }
+  .user-company-review {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 0px 5px 3px rgb(219, 218, 218);
+    background-color: $main-post-bgc-eee;
+  }
+  .user-review,
+  .user-img {
+    padding: 20px;
+  }
+  .user-review {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .user-comment {
+    padding: 10px 10px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0;
+    .quote-left {
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      font-size: 20px;
+      color: $main-color2-light-blue;
+    }
+    .quote-right {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 20px;
+      color: $main-color2-light-blue;
+    }
+  }
+  .user-img-cntr {
+    background-color: $main-bgc2-white;
+    height: 160px;
+    width: 140px;
+  }
+  .user-image {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 5px 2px rgb(177, 176, 176);
+  }
+  .user-name {
+    font-weight: 800;
+    padding-top: 5px;
+  }
+}
+
+//* animations
+.company-reviews-section {
+  .user-company-review {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    animation: 12s autoplay1 infinite;
+    -webkit-animation: 15s autoplay1 infinite;
+  }
+  @keyframes autoplay1 {
+    0% {
+      visibility: visible;
+    }
+    33.3% {
+      visibility: hidden;
+    }
+  }
+
+  .user-company-review:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .user-company-review:nth-child(2) {
+    animation-delay: 5s;
+  }
+  .user-company-review:nth-child(3) {
+    animation-delay: 10s;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  $section-div-margin: 20px 100px 30px;
+  .company-reviews-section {
+    .company-reviews-section-wrapper {
+      margin: $section-div-margin;
+      padding: $section-div-padding;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  $section-div-margin: 20px 80px 30px;
+  .company-reviews-section {
+    .company-reviews-section-wrapper {
+      margin: $section-div-margin;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  $section-div-margin: 20px 50px 30px;
+  $section-div-padding: 20px;
+  .company-reviews-section {
+    .company-reviews-section-wrapper {
+      margin: $section-div-margin;
+      padding: $section-div-padding;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  $section-div-margin: 30px 20px;
+  $section-div-padding: 0px;
+  .company-reviews-section {
+    .company-reviews-section-wrapper {
+      margin: $section-div-margin;
+      padding: $section-div-padding;
+    }
+    .company-reviews-cntr {
+      height: 150px;
+    }
+    .user-company-review {
+      padding: 10px;
+    }
+    .user-review,
+    .user-img {
+      padding: 10px;
+    }
+    .user-comment {
+      padding: 10px;
+      &::before {
+        top: 10px;
+        left: 10px;
+        font-size: 14px;
+      }
+      &::after {
+        bottom: 20px;
+        right: 20px;
+        font-size: 14px;
+      }
+    }
+    .user-img-cntr {
+      height: 120px;
+      width: 100px;
+    }
+    .user-image {
+      width: 80px;
+      height: 80px;
+    }
+    .user-name {
+      font-weight: 800;
+      padding-top: 5px;
+    }
+  }
+}
