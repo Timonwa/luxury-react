@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
 import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./ListingsPage.scss";
+import ChatBubble from "../../components/ChatBubble/ChatBubble";
 
 const ListingsPage = () => {
   return (
@@ -17,6 +18,7 @@ const ListingsPage = () => {
       </header>
       <RegisterCTA />
       <Footer />
+      <ChatBubble />
     </div>
   );
 };

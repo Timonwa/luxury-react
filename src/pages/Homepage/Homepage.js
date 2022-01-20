@@ -5,6 +5,7 @@ import SearchCard from "../../components/SearchCard/SearchCard";
 import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
 import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./Homepage.scss";
+import ChatBubble from "../../components/ChatBubble/ChatBubble";
 
 const Homepage = () => {
   return (
@@ -25,6 +26,7 @@ const Homepage = () => {
       <WhatWeDo />
       <RegisterCTA />
       <Footer />
+      <ChatBubble />
     </div>
   );
 };
