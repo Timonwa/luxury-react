@@ -7,7 +7,7 @@ import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./Homepage.scss";
 import ChatBubble from "../../components/ChatBubble/ChatBubble";
 import WebsiteReviews from "../../components/WebsiteReviews/WebsiteReviews";
-import FeaturePosts from "../../components/FeaturePosts/FeaturePosts";
+import FeaturedPosts from "../../components/FeaturedPosts/FeaturedPosts";
 
 const Homepage = () => {
   return (
@@ -26,7 +26,7 @@ const Homepage = () => {
         </div>
       </header>
       <WebsiteReviews />
-      <FeaturePosts />
+      <FeaturedPosts />
       <WhatWeDo />
       <RegisterCTA />
       <Footer />
