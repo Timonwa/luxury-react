@@ -4,8 +4,8 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const VerifiedBadge = () => {
   return (
-    <div class="verified">
-      <p class="verified-title">
+    <div className="verified-badge">
+      <p className="verified-title">
         <FaCheckCircle className="verified-icon" /> Verified
       </p>
     </div>

@@ -1,0 +1,18 @@
+$main-color2-light-blue2: #107bff;
+$main-color4-silver: #6c757d;
+
+.ratings-badge {
+  color: $main-color2-light-blue2;
+  .ratings-title {
+    padding: 2px;
+    margin-bottom: 0;
+  }
+  .ratings-star {
+    padding: 0 2px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}
+.disabled-star {
+  color: $main-color4-silver;
+}

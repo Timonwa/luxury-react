@@ -1,13 +1,15 @@
 $main-color5-green: #008000;
 $main-color6-inactive: rgba(202, 202, 202, 0.5);
 
-.verified-title {
-  padding: 2px 5px;
-  margin-bottom: 0;
-  border-bottom: solid 1px $main-color6-inactive;
-  color: $main-color5-green;
-  display: flex;
-  align-items: center;
+.verified-badge {
+  .verified-title {
+    padding: 2px 5px;
+    margin-bottom: 0;
+    border-bottom: solid 1px $main-color6-inactive;
+    color: $main-color5-green;
+    display: flex;
+    align-items: center;
+  }
   .verified-icon {
     margin-right: 2px;
   }

@@ -5,10 +5,10 @@ import PostCard from "../PostCard/PostCard";
 const FeaturedPosts = () => {
   return (
     <main className="feature-posts-section">
-      <div class="feature-posts-section-wrapper">
-        <h3 class="section-title">Posts</h3>
+      <div className="feature-posts-section-wrapper">
+        <h3 className="section-title">Posts</h3>
         {/* <!-- the ads --> */}
-        <div class="feature-posts-cntr">
+        <div className="feature-posts-cntr">
           <PostCard />
         </div>
       </div>

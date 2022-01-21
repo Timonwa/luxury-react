@@ -8,10 +8,10 @@ import PostBadges from "../PostBadges/PostBadges";
 const PostCard = () => {
   return (
     <div className="post-card">
-      <div class="post-card__image">
+      <div className="post-card__image">
         <PostBadges />
         {/* <!-- images of the adverts --> */}
-        <img class="ad-pic" src={postImage} alt="" />
+        <img className="ad-pic" src={postImage} alt="" />
       </div>
       <div className="post-card__body">
         <div className="post-card__brief">

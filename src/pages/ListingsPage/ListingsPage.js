@@ -12,8 +12,8 @@ const ListingsPage = () => {
     <div className="listings-page">
       <NavBar />
       <header className="header-section">
-        <div class="header-wrapper">
-          <div class="header-space"></div>
+        <div className="header-wrapper">
+          <div className="header-space"></div>
           <SearchCard />
         </div>
       </header>
