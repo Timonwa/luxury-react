@@ -1,7 +1,8 @@
 import React from "react";
 import "./PostCard.scss";
-import { FaToilet, FaBath, FaBed, FaCar, FaHeart } from "react-icons/fa";
+import { FaToilet, FaBath, FaBed, FaCar } from "react-icons/fa";
 import postImage from "../../assets/imgs/post_images/living-room-blue-theme.jpg.jpg";
+import LikeButton from "../hooks/LikeButton/LikeButton";
 
 const PostCard = () => {
   return (
@@ -61,11 +62,7 @@ const PostCard = () => {
             <span>car space</span>
           </div>
           {/* <!-- save button --> */}
-          <div className="save-btn">
-            <span>
-              <FaHeart className="feature-icon" />
-            </span>
-          </div>
+          <LikeButton />
         </div>
       </div>
     </div>
