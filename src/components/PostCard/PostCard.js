@@ -3,11 +3,13 @@ import "./PostCard.scss";
 import { FaToilet, FaBath, FaBed, FaCar } from "react-icons/fa";
 import postImage from "../../assets/imgs/post_images/living-room-blue-theme.jpg.jpg";
 import LikeButton from "../hooks/LikeButton/LikeButton";
+import PostBadges from "../PostBadges/PostBadges";
 
 const PostCard = () => {
   return (
     <div className="post-card">
       <div class="post-card__image">
+        <PostBadges />
         {/* <!-- images of the adverts --> */}
         <img class="ad-pic" src={postImage} alt="" />
       </div>
