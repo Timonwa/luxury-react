@@ -1,17 +1,14 @@
 import React from "react";
 import "./PostCard.scss";
 import { FaToilet, FaBath, FaBed, FaCar, FaHeart } from "react-icons/fa";
+import postImage from "../../assets/imgs/post_images/living-room-blue-theme.jpg.jpg";
 
 const PostCard = () => {
   return (
     <div className="post-card">
       <div class="post-card__image">
         {/* <!-- images of the adverts --> */}
-        <img
-          class="ad-pic"
-          src="/img/post_images/apartment-building.jpg"
-          alt=""
-        />
+        <img class="ad-pic" src={postImage} alt="" />
       </div>
       <div className="post-card__body">
         <div className="post-card__brief">

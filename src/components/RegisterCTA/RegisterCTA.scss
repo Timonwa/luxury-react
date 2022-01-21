@@ -36,8 +36,8 @@ $google: #dd4b39;
 
 // dimensions
 $nav-height: 40px;
-$section-div-margin: 20px 150px 30px;
-$section-div-padding: 20px;
+$section-padding: 20px 150px 30px;
+$section-wrapper-padding: 20px;
 
 // fonts
 $main-font: sans-serif;
@@ -70,7 +70,7 @@ $main-font: sans-serif;
     -o-border-radius: 20px 20px 0 0;
   }
   .register-cntr {
-    padding: $section-div-padding;
+    padding: $section-wrapper-padding;
     padding-top: 40px;
     padding-bottom: 40px;
     width: 800px;
@@ -79,9 +79,13 @@ $main-font: sans-serif;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+  .register-body,
+  .register-btn-cntr {
+    margin: 0 10px;
   }
   .register-body {
-    margin: 0 10px;
     font-weight: 700;
     font-size: 18px;
   }
@@ -106,8 +110,6 @@ $main-font: sans-serif;
 }
 
 @media screen and (max-width: 500px) {
-  $section-div-margin: 30px 20px;
-  $section-div-padding: 0px;
   .cta-section {
     .register-cntr {
       padding-left: 10px;

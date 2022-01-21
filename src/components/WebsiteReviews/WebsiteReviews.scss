@@ -36,8 +36,8 @@ $google: #dd4b39;
 
 // dimensions
 $nav-height: 40px;
-$section-div-margin: 20px 150px 30px;
-$section-div-padding: 20px;
+$section-padding: 20px 150px 30px;
+$section-wrapper-padding: 20px;
 
 // fonts
 $main-font: sans-serif;
@@ -45,11 +45,10 @@ $main-font: sans-serif;
 /* * reviews section */
 .company-reviews-section {
   background-color: $main-post-bgc-eee;
-  padding: $section-div-margin;
+  padding: $section-padding;
   width: 100%;
   .company-reviews-section-wrapper {
-    // margin:;
-    padding: $section-div-padding;
+    padding: $section-wrapper-padding;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,41 +172,41 @@ $main-font: sans-serif;
 }
 
 @media screen and (max-width: 900px) {
-  $section-div-margin: 20px 100px 30px;
+  $section-padding: 20px 100px 30px;
   .company-reviews-section {
-    padding: $section-div-margin;
+    padding: $section-padding;
     .company-reviews-section-wrapper {
-      padding: $section-div-padding;
+      padding: $section-wrapper-padding;
     }
   }
 }
 @media screen and (max-width: 768px) {
-  $section-div-margin: 20px 80px 30px;
+  $section-padding: 20px 80px 30px;
   .company-reviews-section {
-    padding: $section-div-margin;
+    padding: $section-padding;
     .company-reviews-section-wrapper {
-      padding: $section-div-padding;
+      padding: $section-wrapper-padding;
     }
   }
 }
 @media screen and (max-width: 650px) {
-  $section-div-margin: 20px 50px 30px;
-  $section-div-padding: 20px;
+  $section-padding: 20px 50px 30px;
+  $section-wrapper-padding: 20px;
   .company-reviews-section {
-    padding: $section-div-margin;
+    padding: $section-padding;
     .company-reviews-section-wrapper {
-      padding: $section-div-padding;
+      padding: $section-wrapper-padding;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
-  $section-div-margin: 30px 20px;
-  $section-div-padding: 0px;
+  $section-padding: 30px 20px;
+  $section-wrapper-padding: 0px;
   .company-reviews-section {
-    padding: $section-div-margin;
+    padding: $section-padding;
     .company-reviews-section-wrapper {
-      padding: $section-div-padding;
+      padding: $section-wrapper-padding;
     }
     .company-reviews-cntr {
       height: 150px;
