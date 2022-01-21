@@ -43,9 +43,7 @@ $section-wrapper-padding: 20px;
 $main-font: sans-serif;
 
 .feature-posts-section {
-  // background-color: $main-post-bgc;
-  background-color: #000;
-  border: 1px solid #000;
+  background-color: $main-post-bgc;
   padding: $section-padding;
   padding-left: 0;
   padding-right: 0;
@@ -56,7 +54,6 @@ $main-font: sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: green;
   }
 
   .feature-posts-cntr {
@@ -64,7 +61,6 @@ $main-font: sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: pink;
   }
 }
 

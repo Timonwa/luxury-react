@@ -15,7 +15,8 @@ const PostCard = () => {
           {/* <!-- name and location --> */}
           <h4 className="ad-link">
             <a className="ad-title" href="/html/post.html">
-              Kings's Lodge |<small className="ad-location">Ikoyi</small>
+              Kings's Lodge |{` `}
+              <small className="ad-location">Ikoyi</small>
             </a>
           </h4>
           {/* <!-- price --> */}

@@ -49,7 +49,6 @@ $main-font: sans-serif;
   bottom: 40px;
   padding: 10px;
   background-color: $main-bgc2-white;
-  color: $main-color2-light-blue;
   border: solid 2px $main-post-bgc-eee;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -59,8 +58,8 @@ $main-font: sans-serif;
 }
 .chat-btn {
   font-size: 30px;
+  color: $main-color2-light-blue;
 }
-
 @media screen and (max-width: 960px) {
   .chat-btn {
     font-size: 25px;
