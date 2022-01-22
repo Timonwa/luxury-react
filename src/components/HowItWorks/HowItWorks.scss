@@ -45,7 +45,7 @@ $ad-width: 350px;
 $main-font: sans-serif;
 
 /* * how it works section */
-.how-it-works {
+.how-it-works-section {
   background-color: $main-bgc2-white;
   padding: $section-padding;
   .how-it-works-wrapper {
@@ -84,7 +84,7 @@ $main-font: sans-serif;
 
 @media screen and (max-width: 900px) {
   $section-padding: 20px 100px 30px;
-  .how-it-works {
+  .how-it-works-section {
     padding: $section-padding;
     .how-it-works -wrapper {
       padding: $section-wrapper-padding;
@@ -93,7 +93,7 @@ $main-font: sans-serif;
 }
 @media screen and (max-width: 768px) {
   $section-padding: 20px 80px 30px;
-  .how-it-works {
+  .how-it-works-section {
     padding: $section-padding;
     .how-it-works-wrapper {
       padding: $section-wrapper-padding;
@@ -104,7 +104,7 @@ $main-font: sans-serif;
   $section-padding: 20px 50px 30px;
   $section-wrapper-padding: 20px;
   $ad-width: 350px;
-  .how-it-works {
+  .how-it-works-section {
     padding: $section-padding;
     .how-it-works-wrapper {
       padding: $section-wrapper-padding;
@@ -130,7 +130,7 @@ $main-font: sans-serif;
 @media screen and (max-width: 500px) {
   $section-padding: 30px 20px;
   $section-wrapper-padding: 0px;
-  .how-it-works {
+  .how-it-works-section {
     padding: $section-padding;
     .how-it-works-wrapper {
       padding: $section-wrapper-padding;

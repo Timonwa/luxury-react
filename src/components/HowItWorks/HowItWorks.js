@@ -8,7 +8,7 @@ import move from "../../assets/imgs/about/move-in.png";
 
 const WhatWeDo = () => {
   return (
-    <section className="how-it-works">
+    <section className="how-it-works-section">
       <div className="how-it-works-wrapper">
         <h3 className="section-title">How It Works</h3>
         <div className="how-it-works">
