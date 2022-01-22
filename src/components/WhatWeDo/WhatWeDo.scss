@@ -45,19 +45,19 @@ $ad-width: 350px;
 $main-font: sans-serif;
 
 /* * about section */
-.about-section {
+.how-it-works {
   background-color: $main-bgc2-white;
   padding: $section-padding;
-  .about-section-wrapper {
+  .how-it-works-wrapper {
     padding: $section-wrapper-padding;
     flex-direction: column;
     justify-content: center;
   }
-  .about-us {
+  .how-it-works {
     display: flex;
     flex-direction: column;
   }
-  .about-us-ctnr {
+  .how-it-works-ctnr {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -68,11 +68,11 @@ $main-font: sans-serif;
     &:nth-child(2n) {
       text-align: right;
     }
-    .about-us-img {
+    .how-it-works-img {
       width: 250px;
       height: 250px;
     }
-    .about-us-description {
+    .how-it-works-description {
       padding: 20px 0;
       display: flex;
       flex-direction: column;
@@ -84,18 +84,18 @@ $main-font: sans-serif;
 
 @media screen and (max-width: 900px) {
   $section-padding: 20px 100px 30px;
-  .about-section {
+  .how-it-works {
     padding: $section-padding;
-    .about-section-wrapper {
+    .how-it-works -wrapper {
       padding: $section-wrapper-padding;
     }
   }
 }
 @media screen and (max-width: 768px) {
   $section-padding: 20px 80px 30px;
-  .about-section {
+  .how-it-works {
     padding: $section-padding;
-    .about-section-wrapper {
+    .how-it-works-wrapper {
       padding: $section-wrapper-padding;
     }
   }
@@ -104,12 +104,12 @@ $main-font: sans-serif;
   $section-padding: 20px 50px 30px;
   $section-wrapper-padding: 20px;
   $ad-width: 350px;
-  .about-section {
+  .how-it-works {
     padding: $section-padding;
-    .about-section-wrapper {
+    .how-it-works-wrapper {
       padding: $section-wrapper-padding;
     }
-    .about-us-ctnr {
+    .how-it-works-ctnr {
       flex-direction: column;
       align-items: center;
       padding: 20px 40px;
@@ -117,10 +117,10 @@ $main-font: sans-serif;
       &:nth-child(2n) {
         flex-direction: column-reverse;
       }
-      .about-us-body {
+      .how-it-works-body {
         text-align: center;
       }
-      .about-us-img {
+      .how-it-works-img {
         width: 200px;
         height: 200px;
       }
@@ -130,9 +130,9 @@ $main-font: sans-serif;
 @media screen and (max-width: 500px) {
   $section-padding: 30px 20px;
   $section-wrapper-padding: 0px;
-  .about-section {
+  .how-it-works {
     padding: $section-padding;
-    .about-section-wrapper {
+    .how-it-works-wrapper {
       padding: $section-wrapper-padding;
     }
   }

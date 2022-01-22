@@ -8,70 +8,70 @@ import move from "../../assets/imgs/about/move-in.png";
 
 const WhatWeDo = () => {
   return (
-    <section className="about-section" id="about">
-      <div className="about-section-wrapper">
-        <h3 className="section-title">About</h3>
-        <div className="about-us">
+    <section className="how-it-works">
+      <div className="how-it-works-wrapper">
+        <h3 className="section-title">How It Works</h3>
+        <div className="how-it-works">
           {/* about us: search */}
-          <div className="about-us-ctnr">
+          <div className="how-it-works-ctnr">
             {/* search img */}
-            <img className="about-us-img" src={search} alt="" />
+            <img className="how-it-works-img" src={search} alt="" />
             {/* search description */}
-            <div className="about-us-description">
-              <h4 className="about-us-title">Search</h4>
-              <p className="about-us-body">
+            <div className="how-it-works-description">
+              <h4 className="how-it-works-title">Search</h4>
+              <p className="how-it-works-body">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
                 ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
           </div>
           {/* about  us: save */}
-          <div className="about-us-ctnr">
+          <div className="how-it-works-ctnr">
             {/* search description */}
-            <div className="about-us-description">
-              <h4 className="about-us-title">Save</h4>
-              <p className="about-us-body">
+            <div className="how-it-works-description">
+              <h4 className="how-it-works-title">Save</h4>
+              <p className="how-it-works-body">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
                 ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
             {/* search img */}
-            <img className="about-us-img" src={save} alt="" />
+            <img className="how-it-works-img" src={save} alt="" />
           </div>
           {/* about us: book visitation */}
-          <div className="about-us-ctnr">
+          <div className="how-it-works-ctnr">
             {/* search img */}
-            <img className="about-us-img" src={book} alt="" />
+            <img className="how-it-works-img" src={book} alt="" />
             {/* search description */}
-            <div className="about-us-description">
-              <h4 className="about-us-title">Book Visitation</h4>
-              <p className="about-us-body">
+            <div className="how-it-works-description">
+              <h4 className="how-it-works-title">Book Visitation</h4>
+              <p className="how-it-works-body">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
                 ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
           </div>
           {/* about  us: make secure payment */}
-          <div className="about-us-ctnr">
+          <div className="how-it-works-ctnr">
             {/* search description */}
-            <div className="about-us-description">
-              <h4 className="about-us-title">Secure Payment</h4>
-              <p className="about-us-body">
+            <div className="how-it-works-description">
+              <h4 className="how-it-works-title">Secure Payment</h4>
+              <p className="how-it-works-body">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
                 ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
             {/* search img */}
-            <img className="about-us-img" src={payment} alt="" />
+            <img className="how-it-works-img" src={payment} alt="" />
           </div>
           {/* about us: get your key */}
-          <div className="about-us-ctnr">
+          <div className="how-it-works-ctnr">
             {/* search img */}
-            <img className="about-us-img" src={move} alt="" />
+            <img className="how-it-works-img" src={move} alt="" />
             {/* search description */}
-            <div className="about-us-description">
-              <h4 className="about-us-title">Move In</h4>
-              <p className="about-us-body">
+            <div className="how-it-works-description">
+              <h4 className="how-it-works-title">Move In</h4>
+              <p className="how-it-works-body">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
                 ipsum dolor sit amet consectetur, adipisicing elit.
               </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -18,9 +19,9 @@ const NavBar = () => {
         <div className="nav-bar__NavLinks">
           <ul>
             <li>
-              <NavLink to="/#about" className="nav-bar__NavLink">
+              <HashLink smooth to="/#about" className="nav-bar__NavLink">
                 About
-              </NavLink>
+              </HashLink>
             </li>
             <li>
               <NavLink to="/listings" className="nav-bar__NavLink">
