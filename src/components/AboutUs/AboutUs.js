@@ -21,7 +21,7 @@ const AboutUs = () => {
           </p>
           <div className="about-us__stats">
             <div className="about-us__stats-card">
-              <p className="about-us__stats-title">Agents</p>
+              <p className="about-us__stats-title">Agents and Hosts</p>
               <p className="about-us__stats-nos">350</p>
             </div>
             <div className="about-us__stats-card">
