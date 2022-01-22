@@ -109,21 +109,21 @@ $main-font: sans-serif;
   }
   .user-comment {
     padding: 10px 10px;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
     margin-bottom: 0;
     .quote-left {
       position: absolute;
       top: 0px;
       left: 20px;
-      font-size: 20px;
+      font-size: 1.2rem;
       color: $main-color2-light-blue;
     }
     .quote-right {
       position: absolute;
-      bottom: 10px;
+      bottom: 0px;
       right: 20px;
-      font-size: 20px;
+      font-size: 1.2rem;
       color: $main-color2-light-blue;
     }
   }
