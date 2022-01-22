@@ -53,6 +53,25 @@ $main-font: sans-serif;
     flex-direction: column;
     justify-content: center;
   }
+  .about-us__stats {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .about-us__stats-card {
+    padding: 10px;
+  }
+  .about-us__stats-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $main-bgc3-dark-blue;
+  }
+  .about-us__stats-nos {
+    font-weight: 900;
+    font-size: 2rem;
+    color: $main-color2-light-blue2;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -61,25 +80,6 @@ $main-font: sans-serif;
     padding: $section-padding;
     .about-us-wrapper {
       padding: $section-wrapper-padding;
-    }
-    .about-us__stats {
-      text-align: center;
-      display: flex;
-      justify-content: space-around;
-	  margin-top: 20px;
-    }
-    .about-us__stats-card {
-      padding: 10px;
-    }
-    .about-us__stats-title {
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: $main-bgc3-dark-blue;
-    }
-    .about-us__stats-nos {
-      font-weight: 900;
-      font-size: 2rem;
-      color: $main-color2-light-blue2;
     }
   }
 }
