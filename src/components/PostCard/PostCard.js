@@ -10,9 +10,11 @@ const PostCard = () => {
   return (
     <div className="post-card">
       <div className="post-card__image">
-        <PostBadges />
-        {/* <!-- images of the adverts --> */}
-        <img className="ad-pic" src={postImage} alt="" />
+        <Link to="/post">
+          <PostBadges />
+          {/* <!-- images of the adverts --> */}
+          <img className="ad-pic" src={postImage} alt="" />
+        </Link>
       </div>
       <div className="post-card__body">
         <div className="post-card__brief">
