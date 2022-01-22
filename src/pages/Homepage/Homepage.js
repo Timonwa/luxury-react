@@ -2,12 +2,13 @@ import React from "react";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
-import WhatWeDo from "../../components/WhatWeDo/WhatWeDo";
+import HowItWorks from "../../components/HowItWorks/HowItWorks";
 import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./Homepage.scss";
 import ChatBubble from "../../components/ChatBubble/ChatBubble";
 import WebsiteReviews from "../../components/WebsiteReviews/WebsiteReviews";
 import FeaturedPosts from "../../components/FeaturedPosts/FeaturedPosts";
+import AboutUs from "../../components/AboutUs/AboutUs";
 
 const Homepage = () => {
   return (
@@ -21,13 +22,13 @@ const Homepage = () => {
               <small>Your one stop to the home of your dreams.</small>
             </h4>
           </div>
-
           <SearchCard />
         </div>
       </header>
       <WebsiteReviews />
       <FeaturedPosts />
-      <WhatWeDo />
+      <AboutUs />
+      <HowItWorks />
       <RegisterCTA />
       <Footer />
       <ChatBubble />

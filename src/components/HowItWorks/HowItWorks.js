@@ -1,5 +1,5 @@
 import React from "react";
-import "./WhatWeDo.scss";
+import "./HowItWorks.scss";
 import search from "../../assets/imgs/about/search.png";
 import save from "../../assets/imgs/about/save.png";
 import book from "../../assets/imgs/about/book.png";
