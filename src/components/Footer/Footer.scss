@@ -93,13 +93,14 @@ $main-font: sans-serif;
     padding-top: 5px;
     .icons {
       margin: 0 10px;
+      font-size: 1.5rem;
     }
   }
 
   .designer,
   .designer > a {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: $white;
   }
 }
