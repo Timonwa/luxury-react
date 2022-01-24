@@ -11,6 +11,10 @@ import FeaturedPosts from "../../components/FeaturedPosts/FeaturedPosts";
 import AboutUs from "../../components/AboutUs/AboutUs";
 
 const Homepage = () => {
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
+
   return (
     <div className="homepage">
       <NavBar />
