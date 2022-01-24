@@ -8,6 +8,10 @@ import "./ListingsPage.scss";
 import ChatBubble from "../../components/ChatBubble/ChatBubble";
 
 const ListingsPage = () => {
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
+
   return (
     <div className="listings-page">
       <NavBar />
