@@ -5,6 +5,10 @@ import NavBar from "../../../components/NavBar/NavBar";
 import "./LoginPage.scss"
 
 const LoginPage = () => {
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
+
   return (
     <div className="login-page">
       <NavBar />
