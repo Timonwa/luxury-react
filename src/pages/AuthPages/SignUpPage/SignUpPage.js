@@ -6,7 +6,11 @@ import "./SignUpPage.scss";
 
 
 const SignUpPage = () => {
-	return (
+  useEffect(() => {
+    window.scroll(0,0)
+  }, [])
+
+    return (
     <div className="signup-page">
       <NavBar />
       <SignUp />
