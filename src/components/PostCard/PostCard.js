@@ -11,7 +11,7 @@ const PostCard = () => {
       <div className="post-section-wrapper">
         <div className="post-card">
           {/* <!-- name of the advert --> */}
-          <div className="card-title">
+          <div className="post-card-title">
             <span>
               <p>Grey Hostel</p>
               <span className="price">200,000</span>
@@ -21,12 +21,12 @@ const PostCard = () => {
               <p>21/03/2021</p>
             </span>
           </div>
-          <div className="ad-group1">
+          <div className="post-card-image">
             <PostBadges />
             {/* <!-- images of the adverts --> */}
             <img className="ad-pic" src={image1} alt="" />
           </div>
-          <div className="ad-group2">
+          <div className="post-card-features">
             {/* <!-- ad basic features --> */}
             <div className="features-cntr">
               <div className="feature">
@@ -61,7 +61,7 @@ const PostCard = () => {
               <LikeButton />
             </div>
           </div>
-          <div className="ad-group3">
+          <div className="post-card-body">
             {/* <!-- title --> */}
             <h4 className="post-title">Grey Hostel serviced apartment</h4>
             <h4>Akoka road, Yaba, Lagos</h4>
@@ -82,15 +82,8 @@ const PostCard = () => {
               obcaecati dolorem nostrum distinctio quisquam. Id!
             </p>
           </div>
-          <div className="ad-group5">
+          <div className="post-card-tags">
             <span className="tags">hostel</span>
-            <span className="tags">female</span>
-            <span className="tags">serviced apartment</span>
-            <span className="tags">yaba</span>
-            <span className="tags">hostel</span>
-            <span className="tags">female</span>
-            <span className="tags">serviced apartment</span>
-            <span className="tags">yaba</span>
           </div>
         </div>
         {/* <!-- cta --> */}

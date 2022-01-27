@@ -64,7 +64,7 @@ $main-font: sans-serif;
     background-color: $main-bgc2-white;
     width: 100%;
 
-    .card-title {
+    .post-card-title {
       background-color: $main-post-bgc-eee;
       display: flex;
       justify-content: space-between;
@@ -84,7 +84,7 @@ $main-font: sans-serif;
         text-align: right;
       }
     }
-    .ad-group1 {
+    .post-card-image {
       width: inherit;
       height: 400px;
       position: relative;
@@ -94,7 +94,7 @@ $main-font: sans-serif;
         height: inherit;
       }
     }
-    .ad-group2 {
+    .post-card-features {
       border-bottom: solid 1px $main-post-bgc-eee;
       width: inherit;
 
@@ -122,7 +122,7 @@ $main-font: sans-serif;
         width: calc($section-width) / 7;
       }
     }
-    .ad-group3 {
+    .post-card-body {
       padding: 20px 40px;
       border-bottom: solid 1px $main-post-bgc-eee;
       text-align: center;
@@ -138,7 +138,7 @@ $main-font: sans-serif;
         color: $main-color4-red;
       }
     }
-    .ad-group5 {
+    .post-card-tags {
       border-top: solid 1px $main-post-bgc-eee;
       width: 100%;
       padding: $section-wrapper-padding;
@@ -215,7 +215,7 @@ $main-font: sans-serif;
     }
   }
   .post-card {
-    .ad-group1 {
+    .post-card-image {
       height: 250px;
     }
   }
@@ -229,7 +229,7 @@ $main-font: sans-serif;
       padding: $section-wrapper-padding;
     }
     .post-card {
-      .ad-group5 {
+      .post-card-tags {
         padding: 10px;
       }
     }
