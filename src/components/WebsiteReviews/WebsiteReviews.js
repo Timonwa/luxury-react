@@ -3,8 +3,6 @@ import "./WebsiteReviews.scss";
 import profile1 from "../../assets/imgs/reviews/profile1.jpg";
 import profile2 from "../../assets/imgs/reviews/profile2.jpg";
 import {
-//   FaChevronLeft,
-//   FaChevronRight,
   FaQuoteLeft,
   FaQuoteRight,
 } from "react-icons/fa";
@@ -70,12 +68,6 @@ const WebsiteReviews = () => {
               <h6 className="user-name">John Doe3</h6>
             </div>
           </div>
-          {/* <div className="prev-btn">
-            <FaChevronLeft />
-          </div>
-          <div className="next-btn">
-            <FaChevronRight />
-          </div> */}
         </div>
       </div>
     </section>
