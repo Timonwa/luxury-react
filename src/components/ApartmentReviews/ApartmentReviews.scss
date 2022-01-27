@@ -55,10 +55,8 @@ $main-font: sans-serif;
     flex-direction: column;
   }
   .ad-reviews-cntr {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     font-size: 14px;
   }
@@ -91,6 +89,13 @@ $main-font: sans-serif;
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .ad-reviews-section {
+    .ad-reviews-cntr {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
 @media screen and (max-width: 900px) {
   $section-padding: 20px 100px 30px;
   .ad-reviews-section {
@@ -106,6 +111,9 @@ $main-font: sans-serif;
     padding: $section-padding;
     .ad-reviews-wrapper {
       padding: $section-wrapper-padding;
+    }
+    .ad-reviews-cntr {
+      grid-template-columns: 1fr;
     }
   }
 }
