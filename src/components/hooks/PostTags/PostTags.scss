@@ -1,0 +1,26 @@
+// variables
+$main-post-bgc-eee: #eee;
+
+// dimensions
+$section-wrapper-padding: 20px;
+
+.post-card-tags {
+  border-top: solid 1px $main-post-bgc-eee;
+  width: 100%;
+  padding: $section-wrapper-padding;
+  display: flex;
+  flex-wrap: wrap;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: $main-post-bgc-eee;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: initial;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}

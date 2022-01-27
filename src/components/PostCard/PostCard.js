@@ -4,6 +4,7 @@ import PostBadges from "../PostBadges/PostBadges";
 import image1 from "../../assets/imgs/post_images/living-room-couch.jpg";
 import { FaToilet, FaBath, FaBed, FaCar } from "react-icons/fa";
 import LikeButton from "../hooks/LikeButton/LikeButton";
+import PostTags from "../hooks/PostTags/PostTags";
 
 const PostCard = () => {
   return (
@@ -82,9 +83,7 @@ const PostCard = () => {
               obcaecati dolorem nostrum distinctio quisquam. Id!
             </p>
           </div>
-          <div className="post-card-tags">
-            <span className="tags">hostel</span>
-          </div>
+          <PostTags />
         </div>
         {/* <!-- cta --> */}
         <div className="post-cta-btns">
