@@ -16,7 +16,6 @@ const WebsiteReviews = () => {
         <div className="company-reviews-cntr">
           <div className="user-company-review">
             <div className="user-review">
-              {/* <!-- user review --> */}
               <p className="user-comment">
                 <FaQuoteLeft className="quote-left" />
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
@@ -25,16 +24,13 @@ const WebsiteReviews = () => {
               </p>
             </div>
             <div className="user-img">
-              {/* <!-- user img --> */}
               <img className="user-image" src={profile2} alt="user1" />
-              {/* <!-- user name --> */}
               <h6 className="user-name">John Doe1</h6>
             </div>
           </div>
 
-          <div className="user-company-review">
+          {/* <div className="user-company-review">
             <div className="user-review">
-              {/* <!-- user review --> */}
               <p className="user-comment">
                 <FaQuoteLeft className="quote-left" />
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
@@ -44,16 +40,13 @@ const WebsiteReviews = () => {
               </p>
             </div>
             <div className="user-img">
-              {/* <!-- user img --> */}
               <img className="user-image" src={profile2} alt="user2" />
-              {/* <!-- user name --> */}
               <h6 className="user-name">John Doe2</h6>
             </div>
           </div>
 
           <div className="user-company-review">
             <div className="user-review">
-              {/* <!-- user review --> */}
               <p className="user-comment">
                 <FaQuoteLeft className="quote-left" />
                 Lorem ipsum dolor sit amet consectetu adipis, accusantium magnam
@@ -62,12 +55,10 @@ const WebsiteReviews = () => {
               </p>
             </div>
             <div className="user-img">
-              {/* <!-- user img --> */}
               <img className="user-image" src={profile1} alt="user3" />
-              {/* <!-- user name --> */}
               <h6 className="user-name">John Doe3</h6>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

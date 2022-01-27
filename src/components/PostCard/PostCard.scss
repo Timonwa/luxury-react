@@ -96,7 +96,7 @@ $main-font: sans-serif;
 
       .ad-pic {
         width: 100%;
-        height: inherit;
+        height: 400px;
       }
     }
     .post-card-features {
@@ -179,6 +179,15 @@ $main-font: sans-serif;
       padding: $section-wrapper-padding;
     }
   }
+  .post-card {
+    .post-card-image {
+      height: 300px;
+
+      .ad-pic {
+        height: 300px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   $section-padding: 20px 80px 30px;
@@ -197,6 +206,15 @@ $main-font: sans-serif;
     padding: $section-padding;
     .post-section-wrapper {
       padding: $section-wrapper-padding;
+    }
+    .post-card {
+      .post-card-image {
+        height: 250px;
+
+        .ad-pic {
+          height: 250px;
+        }
+      }
     }
   }
   .post-card {
