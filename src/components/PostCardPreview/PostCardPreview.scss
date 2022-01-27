@@ -44,7 +44,7 @@ $ad-width: 350px;
 // fonts
 $main-font: sans-serif;
 
-.post-card {
+.post-card-preview {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -54,12 +54,12 @@ $main-font: sans-serif;
   border: 1px $main-bdr;
   margin-bottom: 020px;
 
-  .post-card__image,
-  .post-card__body {
+  .post-card-preview__image,
+  .post-card-preview__body {
     height: 300px;
     background-color: $main-bgc2-white;
   }
-  .post-card__image {
+  .post-card-preview__image {
     position: relative;
     width: 100%;
   }
@@ -67,7 +67,7 @@ $main-font: sans-serif;
     width: 100%;
     height: 300px;
   }
-  .post-card__body {
+  .post-card-preview__body {
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ $main-font: sans-serif;
     align-items: center;
     text-align: center;
   }
-  .post-card__brief {
+  .post-card-preview__brief {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +94,7 @@ $main-font: sans-serif;
       color: $main-color4-red;
     }
   }
-  .post-card__features {
+  .post-card-preview__features {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -124,31 +124,31 @@ $main-font: sans-serif;
 }
 
 @media screen and (min-width: 1200px) {
-  .post-card {
-    .post-card__image {
+  .post-card-preview {
+    .post-card-preview__image {
       width: 430px;
       position: relative;
     }
-    .post-card__body {
+    .post-card-preview__body {
       width: 530px;
     }
   }
 }
 @media screen and (max-width: 900px) {
-  .post-card {
+  .post-card-preview {
     width: 600px;
-    .post-card__image,
-    .post-card__body {
+    .post-card-preview__image,
+    .post-card-preview__body {
       height: 250px;
     }
-    .post-card__image {
+    .post-card-preview__image {
       width: 250px;
     }
     .ad-pic {
       width: 100%;
       height: 250px;
     }
-    .post-card__body {
+    .post-card-preview__body {
       width: $ad-width;
     }
     // .save-btn,
@@ -158,21 +158,21 @@ $main-font: sans-serif;
   }
 }
 @media screen and (max-width: 650px) {
-  .post-card {
+  .post-card-preview {
     width: 100%;
     flex-direction: column;
 
-    .post-card__image {
+    .post-card-preview__image {
       width: 100%;
       height: 250px;
     }
     .ad-pic {
       width: 100%;
     }
-    .post-card__body {
+    .post-card-preview__body {
       width: 100%;
     }
-    .post-card__features {
+    .post-card-preview__features {
       width: 100%;
     }
     .feature,

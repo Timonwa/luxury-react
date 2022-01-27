@@ -1,6 +1,6 @@
 import React from "react";
 import "./FeaturedPosts.scss";
-import PostCard from "../PostCard/PostCard";
+import PostCardPreview from "../PostCardPreview/PostCardPreview";
 
 const FeaturedPosts = () => {
   return (
@@ -9,7 +9,7 @@ const FeaturedPosts = () => {
         <h3 className="section-title">Posts</h3>
         {/* <!-- the ads --> */}
         <div className="feature-posts-cntr">
-          <PostCard />
+          <PostCardPreview />
         </div>
       </div>
     </main>

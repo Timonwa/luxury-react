@@ -1,6 +1,6 @@
 import React from "react";
 import "./Listings.scss";
-import PostCard from "../PostCard/PostCard";
+import PostCardPreview from "../PostCardPreview/PostCardPreview";
 
 const Listings = () => {
   return (
@@ -9,7 +9,7 @@ const Listings = () => {
         <h3 className="section-title">Posts</h3>
         {/* <!-- the ads --> */}
         <div className="listings-cntr">
-          <PostCard />
+          <PostCardPreview />
         </div>
       </div>
     </main>

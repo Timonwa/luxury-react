@@ -1,23 +1,23 @@
 import React from "react";
-import "./PostCard.scss";
+import "./PostCardPreview.scss";
 import { FaToilet, FaBath, FaBed, FaCar } from "react-icons/fa";
 import postImage from "../../assets/imgs/post_images/living-room-blue-theme.jpg.jpg";
 import LikeButton from "../hooks/LikeButton/LikeButton";
 import PostBadges from "../PostBadges/PostBadges";
 import { Link } from "react-router-dom";
 
-const PostCard = () => {
+const PostCardPreview = () => {
   return (
-    <div className="post-card">
-      <div className="post-card__image">
+    <div className="post-card-preview">
+      <div className="post-card-preview__image">
         <Link to="/post">
           <PostBadges />
           {/* <!-- images of the adverts --> */}
           <img className="ad-pic" src={postImage} alt="" />
         </Link>
       </div>
-      <div className="post-card__body">
-        <div className="post-card__brief">
+      <div className="post-card-preview__body">
+        <div className="post-card-preview__brief">
           <Link to="/post">
             {/* <!-- name and location --> */}
             <h4 className="ad-link">
@@ -39,7 +39,7 @@ const PostCard = () => {
           </Link>
         </div>
         {/* <!-- ad basic features --> */}
-        <div className="post-card__features">
+        <div className="post-card-preview__features">
           <div className="feature">
             <span>
               1{` `}
@@ -76,4 +76,4 @@ const PostCard = () => {
   );
 };
 
-export default PostCard;
+export default PostCardPreview;
