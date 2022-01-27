@@ -5,6 +5,7 @@ import image1 from "../../assets/imgs/post_images/living-room-couch.jpg";
 import { FaToilet, FaBath, FaBed, FaCar } from "react-icons/fa";
 import LikeButton from "../hooks/LikeButton/LikeButton";
 import PostTags from "../hooks/PostTags/PostTags";
+import PostCardTable from "../PostCardTable/PostCardTable";
 
 const PostCard = () => {
   return (
@@ -83,6 +84,7 @@ const PostCard = () => {
               obcaecati dolorem nostrum distinctio quisquam. Id!
             </p>
           </div>
+          <PostCardTable />
           <PostTags />
         </div>
         {/* <!-- cta --> */}
