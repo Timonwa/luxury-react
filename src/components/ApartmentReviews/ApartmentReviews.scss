@@ -1,0 +1,131 @@
+// variables
+// main bg and color variables
+$main-bgc1-grey: rgb(252, 245, 245);
+$main-bgc2-white: rgb(255, 254, 254);
+$main-bgc3-dark-blue: #607279;
+$main-bgc4-lighter-blue: #8cafbb;
+$main-color1-black: rgb(15, 15, 15);
+$main-color2-light-blue: #25b0d3;
+$main-color2-light-blue2: #107bff;
+$main-color3-grey: rgb(153, 153, 153);
+$main-color4-red: #f11313;
+$main-color4-silver: #6c757d;
+$main-color5-green: hsl(120, 76%, 40%);
+
+$main-color6-inactive: rgb(202, 202, 202);
+$black-linear-gradient: linear-gradient(45deg, #607279, black);
+$white: #fff;
+$black: #000;
+$main-bdr: solid #ddd;
+$main-post-bgc-eee: #eee;
+$main-post-bgc: #f2f2f2;
+
+// search form colors
+$search-dropdown-bgc: #eeeeeed2;
+$header-btn-bdr-color: #404b4f80;
+$search-btn-bgc: #2d7087e6;
+$filter-btn-bgc: #ffffffad;
+
+// table color
+$table-header: #8cafbb;
+$chat-btn: #25b0d3;
+
+// social media brand colors
+$twitter: #55acee;
+$facebook: #3b5999;
+$google: #dd4b39;
+
+// dimensions
+$nav-height: 40px;
+$section-padding: 20px 150px 30px;
+$section-wrapper-padding: 20px;
+$ad-width: 350px;
+
+// fonts
+$main-font: sans-serif;
+
+/* * how it works section */
+.ad-reviews-section {
+  padding: $section-padding;
+  display: flex;
+  background-color: $main-post-bgc-eee;
+  .ad-reviews-wrapper {
+    padding: $section-wrapper-padding;
+    display: flex;
+    flex-direction: column;
+  }
+  .ad-reviews-cntr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 14px;
+  }
+  .user-ad-review {
+    box-shadow: 0px 0px 5px 2px rgb(219, 218, 218);
+    border: solid 1px $main-post-bgc-eee;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .user-ad-review-heading {
+    * {
+      margin-bottom: 0;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: $main-post-bgc-eee;
+    border-bottom: solid 1px rgb(219, 218, 218);
+  }
+  .user-ad-ratings {
+    font-size: 10px;
+    align-self: flex-end;
+  }
+  .user-ad-review-body {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  $section-padding: 20px 100px 30px;
+  .ad-reviews-section {
+    padding: $section-padding;
+    .ad-reviews-wrapper {
+      padding: $section-wrapper-padding;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  $section-padding: 20px 80px 30px;
+  .ad-reviews-section {
+    padding: $section-padding;
+    .ad-reviews-wrapper {
+      padding: $section-wrapper-padding;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  $section-padding: 20px 50px 30px;
+  $section-wrapper-padding: 20px;
+  .ad-reviews-section {
+    padding: $section-padding;
+    .ad-reviews-wrapper {
+      padding: $section-wrapper-padding;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  $section-padding: 30px 20px;
+  $section-wrapper-padding: 0px;
+  .ad-reviews-section {
+    padding: $section-padding;
+    .ad-reviews-wrapper {
+      padding: $section-wrapper-padding;
+    }
+  }
+}
