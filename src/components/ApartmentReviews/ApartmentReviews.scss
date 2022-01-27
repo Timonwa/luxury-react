@@ -87,9 +87,15 @@ $main-font: sans-serif;
     padding: 10px 20px;
     font-size: 12px;
   }
+  .load-more-btn {
+    color: $main-color2-light-blue2;
+    border-bottom: 2px solid $main-color3-grey;
+    align-self: flex-start;
+    font-size: 0.8rem;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .ad-reviews-section {
     .ad-reviews-cntr {
       grid-template-columns: 1fr 1fr;
