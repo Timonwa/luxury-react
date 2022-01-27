@@ -6,6 +6,7 @@ import SearchCard from "../../components/SearchCard/SearchCard";
 import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./PostPage.scss";
 import ChatBubble from "../../components/ChatBubble/ChatBubble";
+import PostCard from "../../components/PostCard/PostCard";
 
 const PostPage = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const PostPage = () => {
           <SearchCard />
         </div>
       </header>
+      <PostCard />
       <ApartmentReviews />
       <RegisterCTA />
       <Footer />
