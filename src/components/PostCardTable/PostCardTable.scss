@@ -51,7 +51,8 @@ $main-font: sans-serif;
     font-size: 14px;
     color: rgb(46, 40, 40);
   }
-  table [colSpan] {
+  table .heading {
+    text-align: center;
     font-size: 16px;
     padding: 5px 0;
     background-color: $main-bgc4-lighter-blue;

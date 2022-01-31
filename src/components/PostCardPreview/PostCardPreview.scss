@@ -45,6 +45,12 @@ $ad-width: 350px;
 $main-font: sans-serif;
 
 .post-card-preview {
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: $main-color1-black;
+  }
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -113,14 +119,6 @@ $main-font: sans-serif;
     width: 85px;
     color: $main-color4-silver;
   }
-  // .save-btn {
-  //   width: 60px;
-  //   color: $main-color6-inactive;
-  //   cursor: pointer;
-  //   .feature-icon {
-  //     font-size: 20px;
-  //   }
-  // }
 }
 
 @media screen and (min-width: 1200px) {

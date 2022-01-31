@@ -21,15 +21,15 @@ const WebsiteReviews = () => {
   // Sample items for Carousel
   const items = [
     {
+      id: 1,
       src: profile1,
-      altText: "Review One",
       name: "Johanne Doe",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure beatae optio tempora , mollitia rerum blanditiis!",
     },
     {
+      id: 2,
       src: profile2,
-      altText: "Review Two",
       name: "Jane Doe",
       review:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure beatae optio tempora , mollitia rerum adipisicing elit blanditiis!",
@@ -57,7 +57,7 @@ const WebsiteReviews = () => {
   const carouselItemData = items.map((item) => {
     return (
       <CarouselItem
-        key={item.src}
+        key={item.id}
         onExited={() => setAnimating(false)}
         onExiting={() => setAnimating(true)}>
         <div className="user-company-review">
@@ -69,7 +69,7 @@ const WebsiteReviews = () => {
             </p>
           </div>
           <div className="user-img">
-            <img className="user-image" src={item.src} alt={item.altText} />
+            <img className="user-image" src={item.src} alt={item.name} />
             <h6 className="user-name">{item.name}</h6>
           </div>
         </div>
@@ -87,7 +87,7 @@ const WebsiteReviews = () => {
             next={nextButton}
             activeIndex={activeIndex}
             // interval={null}
-          >
+            dark>
             <CarouselIndicators
               items={items}
               activeIndex={activeIndex}

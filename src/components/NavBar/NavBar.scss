@@ -68,7 +68,10 @@ $main-font: sans-serif;
     padding: $section-wrapper-padding;
   }
 
-  a {
+  a,
+  a:hover,
+  a:active,
+  a:visited {
     padding: 0 10px;
     color: #fff;
     font-weight: 700;

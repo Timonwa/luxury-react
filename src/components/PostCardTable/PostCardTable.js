@@ -8,26 +8,30 @@ const PostCardTable = () => {
       <table>
         <thead>
           <tr>
-            <th colSpan="4">Type</th>
+            <th className="heading" colSpan="4">
+              Type
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th>Type</th>
-            <th>No per room</th>
+            <th>Person per room</th>
             <th>Gender</th>
-            <th></th>
+            <th>Serviced Apartment</th>
           </tr>
           <tr>
             <td name="Type">Hostel</td>
-            <td name="No per room">2</td>
+            <td name="Person per room">2</td>
             <td name="Gender">Female</td>
-            <td></td>
+            <td name="Serviced Apartment">Yes</td>
           </tr>
         </tbody>
         <thead>
           <tr>
-            <th colSpan="4">Payment method</th>
+            <th className="heading" colSpan="4">
+              Payment method
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -46,7 +50,9 @@ const PostCardTable = () => {
         </tbody>
         <thead>
           <tr>
-            <th colSpan="4">Rooms</th>
+            <th className="heading" colSpan="4">
+              Rooms
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -65,33 +71,35 @@ const PostCardTable = () => {
         </tbody>
         <thead>
           <tr>
-            <th colSpan="4">Facilities/Utilities</th>
+            <th className="heading" colSpan="4">
+              Facilities/Utilities
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th>Bed</th>
-            <th>Mattress</th>
+            <th>Security</th>
             <th>Electricity</th>
             <th>Water</th>
+            <th>Reading/Common room</th>
           </tr>
           <tr>
-            <td name="Bed">Yes</td>
-            <td name="Mattress">No</td>
+            <td name="Security">24hrs</td>
             <td name="Electricity">24hrs</td>
             <td name="Water">constant</td>
+            <td name="Reading/Common room">No</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
-            <th>Fan</th>
-            <th>AirCon</th>
+            <th>Bed</th>
+            <th>Mattress</th>
             <th>Cupboard</th>
             <th>Wardrobe</th>
           </tr>
           <tr>
-            <td name="Fan">Yes</td>
-            <td name="AirCon">Yes</td>
+            <td name="Bed">Yes</td>
+            <td name="Mattress">No</td>
             <td name="Cupboard">No</td>
             <td name="Wardrobe">Yes</td>
           </tr>
@@ -100,14 +108,14 @@ const PostCardTable = () => {
           <tr>
             <th>Gas</th>
             <th>Gen</th>
-            <th>Wifi</th>
-            <th>Reading/Commo room</th>
+            <th>Fan</th>
+            <th>AirCon</th>
           </tr>
           <tr>
             <td name="Gas">Yes</td>
             <td name="Gen">Yes</td>
-            <td name="Wifi">No</td>
-            <td name="Reading/Commom room">No</td>
+            <td name="Fan">Yes</td>
+            <td name="AirCon">Yes</td>
           </tr>
         </tbody>
         <tbody>
@@ -121,45 +129,63 @@ const PostCardTable = () => {
             <td name="Cleaning service">Yes</td>
             <td name="Laundering service">Yes</td>
             <td name="Security">Yes</td>
-            <td name="visitation">Visitation Allowed</td>
+            <td name="Visitation">Visitation Allowed</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th>TV</th>
+            <th>Cable Tv</th>
+            <th>Car Park</th>
+            <th>Wifi</th>
+          </tr>
+          <tr>
+            <td name="Tv">Yes</td>
+            <td name="Cable Tv">Yes</td>
+            <td name="Car Park">Yes</td>
+            <td name="Wifi">No</td>
           </tr>
         </tbody>
         <thead>
           <tr>
-            <th colSpan="4">Inspection</th>
+            <th className="heading" colSpan="4">
+              Inspection
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th>Inspection days</th>
-            <th>Inspection hours</th>
-            <th></th>
-            <th></th>
+            <th colSpan="2">Inspection days</th>
+            <th colSpan="2">Inspection hours</th>
           </tr>
           <tr>
-            <td name="Inspection days">Mon, Thurs</td>
-            <td name="Inspection hours">12pm-2pm</td>
-            <td></td>
-            <td></td>
+            <td colSpan="2" name="Inspection days">
+              Mon, Thurs
+            </td>
+            <td colSpan="2" name="Inspection hours">
+              12pm-2pm
+            </td>
           </tr>
         </tbody>
         <thead>
           <tr>
-            <th colSpan="4">Additional info</th>
+            <th className="heading" colSpan="4">
+              Additional info
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th>Proximity to road</th>
             <th>Proximity to market</th>
-            <th>Proximity to school</th>
-            <th></th>
+            <th colSpan="2">Proximity to school</th>
           </tr>
           <tr>
             <td name="Proximity to road">5/5</td>
             <td name="Proximity to market">5/5</td>
-            <td name="Proximity to school">4/5</td>
-            <td></td>
+            <td colSpan="2" name="Proximity to school">
+              4/5
+            </td>
           </tr>
         </tbody>
       </table>
