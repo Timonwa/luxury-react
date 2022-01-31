@@ -45,6 +45,8 @@ $section-width: 350px;
 $main-font: sans-serif;
 
 .post-card-table {
+  display: flex;
+  justify-content: center;
   width: 100%;
   table {
     margin: 40px;
