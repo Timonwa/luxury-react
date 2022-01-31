@@ -47,7 +47,7 @@ $main-font: sans-serif;
 .post-card-table {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: inherit;
   table {
     width: 100%;
     margin: 40px;
