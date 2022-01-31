@@ -1,5 +1,5 @@
 {
-  "websiteReview": [
+  "websiteReviews": [
     {
       "id": 1,
       "name": "Johanne Doe",
@@ -9,18 +9,11 @@
     {
       "id": 2,
       "name": "Jane Doe",
-      "src": "src/assets/imgs/reviews/profile1.jpg",
+      "src": "../../src/assets/imgs/reviews/profile2.jpg",
       "review": "Lorem ipsum dolor sit amet consectetu adipis, accusantium magnam laborum ducimus corrupti inventore illum a!"
-    },
-    {
-      "id": 3,
-      "name": "Janet Doe",
-      "src": "../../assets/imgs/reviews/profile3.jpg",
-      "altText": "Review Three",
-      "review": "Lorem ipsum dolor sit amet consectetur, adipisicing elit accusantium magnam laborum ducimus corrupti inventore illum a  rerum blanditiis!"
     }
   ],
-  "agent": [
+  "agents": [
     {
       "id": 1,
       "name": "Peculiar Ekom",
