@@ -112,7 +112,6 @@ const PostCard = () => {
             </Carousel>
           </div>
           <div className="post-card-features">
-            {/* <!-- ad basic features --> */}
             <div className="features-cntr">
               <div className="feature">
                 <span>
@@ -142,7 +141,6 @@ const PostCard = () => {
                 </span>
                 <span>car space</span>
               </div>
-              {/* <!-- save button --> */}
               <LikeButton />
             </div>
           </div>

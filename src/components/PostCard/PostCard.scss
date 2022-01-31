@@ -120,11 +120,11 @@ $main-font: sans-serif;
         height: 50px;
       }
       .feature {
-        width: calc(($section-width) / 7 * 6 / 4);
+        width: calc(100% / 7 * 6 / 4);
         color: $main-color4-silver;
       }
       .save-btn {
-        width: calc($section-width) / 7;
+        width: calc(100% / 7);
       }
     }
     .post-card-body {
@@ -210,16 +210,10 @@ $main-font: sans-serif;
     .post-card {
       .post-card-image {
         height: 250px;
-
         .ad-pic {
           height: 250px;
         }
       }
-    }
-  }
-  .post-card {
-    .post-card-image {
-      height: 250px;
     }
   }
 }
@@ -232,6 +226,10 @@ $main-font: sans-serif;
       padding: $section-wrapper-padding;
     }
     .post-card {
+      post-card-features {
+        border-bottom: solid 1px $main-post-bgc-eee;
+        width: inherit;
+      }
       .post-card-tags {
         padding: 10px;
       }
