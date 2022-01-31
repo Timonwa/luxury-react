@@ -9,11 +9,9 @@ const NavBar = () => {
       <div className="nav-bar__wrapper">
         {/* webpage logo */}
         <div className="nav-bar__logo">
-          <span>
-            <NavLink to="/" className="nav-bar__NavLink">
-              Luxury
-            </NavLink>
-          </span>
+          <NavLink to="/" className="nav-bar__NavLink">
+            Luxury
+          </NavLink>
         </div>
         {/* webpage nav-bar__NavLinks */}
         <div className="nav-bar__NavLinks">
@@ -28,11 +26,6 @@ const NavBar = () => {
                 Listings
               </NavLink>
             </li>
-            {/* <li>
-              <NavLink to="/signup" className="nav-bar__NavLink" >
-                SignUp
-              </NavLink>
-            </li> */}
             <li>
               <NavLink to="/login" className="nav-bar__NavLink">
                 Login

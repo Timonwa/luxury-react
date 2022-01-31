@@ -60,14 +60,13 @@ $main-font: sans-serif;
     align-items: center;
     width: 100%;
     height: $nav-height;
+    padding: 20px 50px;
   }
-
   ul {
     display: flex;
     flex-direction: row;
-    padding: $section-wrapper-padding;
+    margin-bottom: 0;
   }
-
   a,
   a:hover,
   a:active,
@@ -75,5 +74,22 @@ $main-font: sans-serif;
     padding: 0 10px;
     color: #fff;
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    .nav-bar__wrapper {
+      padding: 20px 10px;
+      // font-size: 0.8rem;
+    }
+    a,
+    a:hover,
+    a:active,
+    a:visited {
+      padding: 0 5px;
+      color: #fff;
+      font-weight: 700;
+    }
   }
 }
