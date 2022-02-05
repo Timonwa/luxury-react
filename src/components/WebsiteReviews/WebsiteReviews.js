@@ -10,7 +10,7 @@ const WebsiteReviews = () => {
   const [itemLength, setItemLength] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/websiteReviews")
+    fetch("https://timonwa-api.herokuapp.com/api/response/websiteReviews")
       .then((res) => {
         return res.json();
       })
