@@ -63,7 +63,6 @@ const PostCard = () => {
         key={item.src}
         onExited={() => setAnimating(false)}
         onExiting={() => setAnimating(true)}>
-        <PostBadges />
         <img className="ad-pic" src={item.src} alt={item.altText} />
       </CarouselItem>
     );
@@ -85,11 +84,14 @@ const PostCard = () => {
             </span>
           </div>
           <div className="post-card-image">
+            <PostBadges />
             <Carousel
               previous={previousButton}
               next={nextButton}
               activeIndex={activeIndex}
-              interval={null}>
+              interval={null}
+              slide={false}
+            >
               <CarouselIndicators
                 items={items}
                 activeIndex={activeIndex}
