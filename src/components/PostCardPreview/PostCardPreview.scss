@@ -87,7 +87,7 @@ $main-font: sans-serif;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 250px;
+    min-height: 250px;
     border-bottom: solid 1px $main-color6-inactive;
     font-size: 1rem;
   }
