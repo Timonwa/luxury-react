@@ -34,7 +34,7 @@ const PostCardPreview = ({ posts }) => {
                   {post.features.duration}
                 </h4>
                 {/* <!--  description --> */}
-                <p className="ad-body">{post.description.slice(0, 100)}</p>
+                <p className="ad-body">{post.description.slice(0, 100)}...</p>
               </Link>
             </div>
             {/* <!-- ad basic features --> */}

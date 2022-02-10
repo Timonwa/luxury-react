@@ -89,16 +89,21 @@ $main-font: sans-serif;
     padding: 20px;
     height: 250px;
     border-bottom: solid 1px $main-color6-inactive;
+    font-size: 1rem;
   }
   .ad-link {
     margin-bottom: 2px;
   }
   .ad-price {
     color: $main-color3-grey;
+    font-size: 1rem;
     .price {
       font-weight: bold;
       color: $main-color4-red;
     }
+  }
+  .ad-body {
+    margin-bottom: 0;
   }
   .post-card-preview__features {
     display: flex;
@@ -141,6 +146,9 @@ $main-font: sans-serif;
     }
     .post-card-preview__image {
       width: 250px;
+    }
+    .post-card-preview__brief {
+      padding: 10px;
     }
     .ad-pic {
       width: 100%;
