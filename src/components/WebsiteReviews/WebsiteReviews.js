@@ -10,8 +10,8 @@ const WebsiteReviews = () => {
   const [itemLength, setItemLength] = useState(null);
 
   useEffect(() => {
-    // fetch("https://luxury-react-api.herokuapp.com/websiteReviews")
-    fetch("http://localhost:3000/websiteReviews")
+    fetch("https://luxury-react-api.herokuapp.com/websiteReviews")
+    // fetch("http://localhost:3000/websiteReviews")
       .then((res) => {
         return res.json();
       })

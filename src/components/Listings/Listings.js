@@ -6,7 +6,8 @@ const Listings = () => {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/posts")
+    fetch("https://luxury-react-api.herokuapp.com/posts")
+    // fetch("http://localhost:3000/posts")
       .then((res) => {
         return res.json();
       })
