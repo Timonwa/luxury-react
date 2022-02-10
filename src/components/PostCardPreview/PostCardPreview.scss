@@ -55,7 +55,7 @@ $main-font: sans-serif;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 700px;
   border: 1px $main-bdr;
   margin-bottom: 020px;
@@ -68,10 +68,11 @@ $main-font: sans-serif;
   .post-card-preview__image {
     position: relative;
     width: 100%;
+    height: initial;
   }
   .ad-pic {
     width: 100%;
-    min-height: 300px;
+    height: inherit;
   }
   .post-card-preview__body {
     width: 400px;
@@ -146,13 +147,13 @@ $main-font: sans-serif;
     }
     .post-card-preview__image {
       width: 250px;
+      height: initial;
     }
     .post-card-preview__brief {
       padding: 10px;
     }
     .ad-pic {
       width: 100%;
-      min-height: 250px;
     }
     .post-card-preview__body {
       width: $ad-width;
@@ -170,7 +171,6 @@ $main-font: sans-serif;
 
     .post-card-preview__image {
       width: 100%;
-      min-height: 250px;
     }
     .ad-pic {
       width: 100%;
