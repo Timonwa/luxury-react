@@ -87,7 +87,7 @@ $main-font: sans-serif;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    min-height: 250px;
+    height: 250px;
     border-bottom: solid 1px $main-color6-inactive;
     font-size: 1rem;
   }
@@ -177,9 +177,6 @@ $main-font: sans-serif;
     }
     .post-card-preview__body {
       width: 100%;
-    }
-    .post-card-preview__brief {
-      padding: 20px;
     }
     .post-card-preview__features {
       width: 100%;
