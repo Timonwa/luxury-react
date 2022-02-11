@@ -15,8 +15,11 @@ import {
   CarouselItem,
   CarouselIndicators,
 } from "reactstrap";
+import { useParams } from "react-router";
 
 const PostCard = () => {
+  const { id } = useParams();
+
   // State for Active index
   const [activeIndex, setActiveIndex] = React.useState(0);
 
@@ -71,6 +74,7 @@ const PostCard = () => {
   return (
     <main className="post-section">
       <div className="post-section-wrapper">
+        <p>id is {id}</p>
         <div className="post-card">
           {/* <!-- name of the advert --> */}
           <div className="post-card-title">
@@ -90,8 +94,7 @@ const PostCard = () => {
               next={nextButton}
               activeIndex={activeIndex}
               interval={null}
-              slide={false}
-            >
+              slide={false}>
               <CarouselIndicators
                 items={items}
                 activeIndex={activeIndex}
