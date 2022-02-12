@@ -8,7 +8,9 @@ import {
   CarouselIndicators,
 } from "reactstrap";
 
-const ReviewCarousel = ({ items, itemLength }) => {
+const ReviewCarousel = ({ items }) => {
+  const itemLength = items.length - 1;
+
   // State for Active index
   const [activeIndex, setActiveIndex] = React.useState(0);
 

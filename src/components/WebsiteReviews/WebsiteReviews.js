@@ -1,34 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./WebsiteReviews.scss";
 import ReviewCarousel from "./ReviewCarousel";
+import useFetch from "../hooks/useFetch/useFetch";
 
 const WebsiteReviews = () => {
-  // Sample items for Carousel
-  const [items, setItems] = useState(null);
+  // const {
+  //   data: items,
+  //   isPending,
+  //   error,
+  // } = useFetch("https://luxury-react-api.herokuapp.com/websiteReviews");
+  const {
+    data: items,
+    isPending,
+    error,
+  } = useFetch("http://localhost:3000/websiteReviews");
 
-  // Items array length
-  const [itemLength, setItemLength] = useState(null);
-
-  useEffect(() => {
-    fetch("https://luxury-react-api.herokuapp.com/websiteReviews")
-    // fetch("http://localhost:3000/websiteReviews")
-      .then((res) => {
-        return res.json();
-      })
-      .then((items) => {
-        setItems(items);
-        setItemLength(items.length - 1);
-      });
-  }, []);
   return (
     <section className="company-reviews-section">
       <div className="company-reviews-section-wrapper">
         <h3 className="section-title">Reviews</h3>
-        {/* <!-- reviews by the users --> */}
         <div className="company-reviews-cntr">
-          {items && itemLength && (
-            <ReviewCarousel items={items} itemLength={itemLength} />
-          )}
+          {error && <div>{error}</div>}
+          {isPending && <h3>Loading...</h3>}
+          {items && <ReviewCarousel items={items} />}
         </div>
       </div>
     </section>
