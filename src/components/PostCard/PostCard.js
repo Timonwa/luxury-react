@@ -88,7 +88,7 @@ const PostCard = () => {
       <div className="post-section-wrapper">
         {error && <div>{error}</div>}
         {isPending && <h3>Loading...</h3>}
-        {post && <div className="post-card">
+        {post && (<div className="post-card">
           {/* <!-- name of the advert --> */}
           <div className="post-card-title">
             <span>
@@ -196,7 +196,7 @@ const PostCard = () => {
             <a href="https://example.com">Book Inspection</a>
           </button>
         </div>
-      </div>}
+      </div>)}
     </main>
   );
 };
