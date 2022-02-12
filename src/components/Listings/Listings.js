@@ -4,16 +4,16 @@ import PostCardPreview from "../PostCardPreview/PostCardPreview";
 import useFetch from "../hooks/useFetch/useFetch";
 
 const Listings = () => {
-  // const {
-  //   data: posts,
-  //   isPending,
-  //   error,
-  // } = useFetch("https://luxury-react-api.herokuapp.com/posts");
   const {
     data: posts,
     isPending,
     error,
-  } = useFetch("http://localhost:3000/posts");
+  } = useFetch("https://luxury-react-api.herokuapp.com/posts");
+  // const {
+  //   data: posts,
+  //   isPending,
+  //   error,
+  // } = useFetch("http://localhost:3000/posts");
 
   return (
     <main className="listings-section">
