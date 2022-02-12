@@ -9,10 +9,10 @@ const PostCardPreview = ({ posts }) => {
   return (
     <>
       {posts.map((post) => (
-        <div className="post-card-preview">
+        <div className="post-card-preview" key={post.id}>
           <div className="post-card-preview__image">
             <Link to={`/post/${post.id}`}>
-              <PostBadges />
+              <PostBadges verified={post.verified} ratings={post.ratings} />
               {/* <!-- images of the adverts --> */}
               <img className="ad-pic" src={post.images[0]} alt={post.title} />
             </Link>

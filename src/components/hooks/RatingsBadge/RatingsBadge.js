@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./RatingsBadge.scss";
 import { FaStar, FaStarHalf, FaRegStar } from "react-icons/fa";
 
-const RatingsBadge = () => {
+const RatingsBadge = ({ ratings }) => {
   const [star5, setStar5] = useState();
   const [star4half, setStar4half] = useState(false);
   const [star4, setStar4] = useState(false);
