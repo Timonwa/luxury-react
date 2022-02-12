@@ -12,7 +12,7 @@ const PostCardPreview = ({ posts }) => {
         <div className="post-card-preview" key={post.id}>
           <div className="post-card-preview__image">
             <Link to={`/post/${post.id}`}>
-              <PostBadges verified={post.verified} ratings={post.ratings} />
+              <PostBadges verified={post.verified} reviews={post.reviews} />
               {/* <!-- images of the adverts --> */}
               <img className="ad-pic" src={post.images[0]} alt={post.title} />
             </Link>

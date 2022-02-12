@@ -89,6 +89,7 @@ const PostCard = () => {
           </div>
           <div className="post-card-image">
             <PostBadges />
+            {/* <PostBadges verified={post.verified} review={post.review} /> */}
             <Carousel
               previous={previousButton}
               next={nextButton}

@@ -3,11 +3,11 @@ import "./PostBadges.scss";
 import VerifiedBadge from "../hooks/VerifiedBadge/VerifiedBadge";
 import RatingsBadge from "../hooks/RatingsBadge/RatingsBadge";
 
-const PostBadges = ({ verified, ratings }) => {
+const PostBadges = ({ verified, reviews }) => {
   return (
     <div className="post-badges">
       <VerifiedBadge verified={verified} />
-      <RatingsBadge ratings={ratings} />
+      <RatingsBadge reviews={reviews} />
     </div>
   );
 };
