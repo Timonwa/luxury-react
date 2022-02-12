@@ -45,7 +45,7 @@ const Login = () => {
         <h3>LOGIN</h3>
         <div className="group1">
           <div className="form-input-group">
-            <label className="form-input-label" for="email" hidden></label>
+            <label className="form-input-label" htmlFor="email" hidden></label>
             <input
               className="form-input"
               type="email"
@@ -58,7 +58,10 @@ const Login = () => {
           </p>
 
           <div className="form-input-group">
-            <label className="form-input-label" for="password" hidden></label>
+            <label
+              className="form-input-label"
+              htmlFor="password"
+              hidden></label>
             <input
               className="form-input"
               type={!viewPassword ? "password" : "text"}
@@ -92,7 +95,7 @@ const Login = () => {
             type="checkbox"
             {...register("rmmbrUser")}
           />
-          <label for="form-check-input">remember me</label>
+          <label htmlFor="form-check-input">remember me</label>
 
           {/* forgot password */}
           <p className="forgot-password">

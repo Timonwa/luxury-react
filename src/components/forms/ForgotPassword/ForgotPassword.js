@@ -42,7 +42,7 @@ const ForgotPassword = () => {
         <p>Please enter the email registered to your account.</p>
         <div className="group1">
           <div className="form-input-group">
-            <label className="form-input-label" for="email" hidden></label>
+            <label className="form-input-label" htmlFor="email" hidden></label>
             <input
               className="form-input"
               type="email"
