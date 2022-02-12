@@ -180,7 +180,7 @@ const PostCard = () => {
           </div>
           <PostCardTable />
           <PostTags />
-        </div>
+        </div>)}
         
         <div className="post-cta-btns">
           {/* <!-- the chat with agent button --> */}
@@ -196,7 +196,6 @@ const PostCard = () => {
             <a href="https://example.com">Book Inspection</a>
           </button>
         </div>
-        </div>)}
       </div>
     </main>
   );
