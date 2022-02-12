@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./RatingsBadge.scss";
 import { FaStar, FaStarHalf, FaRegStar } from "react-icons/fa";
 

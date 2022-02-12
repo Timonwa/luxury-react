@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useFetch } from "react";
 import "./PostCard.scss";
 import PostBadges from "../PostBadges/PostBadges";
 import image1 from "../../assets/imgs/post_images/living-room-couch.jpg";
@@ -19,6 +19,16 @@ import { useParams } from "react-router";
 
 const PostCard = () => {
   const { id } = useParams();
+  // const {
+  //   data: posts,
+  //   isPending,
+  //   error,
+  // } = useFetch("https://luxury-react-api.herokuapp.com/posts" + id);
+  const {
+    data: post,
+    isPending,
+    error,
+  } = useFetch("http://localhost:3000/posts" + id);
 
   // State for Active index
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -75,105 +85,109 @@ const PostCard = () => {
     <main className="post-section">
       <div className="post-section-wrapper">
         <p>id is {id}</p>
-        <div className="post-card">
-          {/* <!-- name of the advert --> */}
-          <div className="post-card-title">
-            <span>
-              <p>Grey Hostel</p>
-              <span className="price">200,000</span>
-            </span>
-            <span>
-              <p>Posted by Mr. Lorem ipsum</p>
-              <p>21/03/2021</p>
-            </span>
-          </div>
-          <div className="post-card-image">
-            <PostBadges />
-            {/* <PostBadges verified={post.verified} review={post.review} /> */}
-            <Carousel
-              previous={previousButton}
-              next={nextButton}
-              activeIndex={activeIndex}
-              interval={null}
-              slide={false}>
-              <CarouselIndicators
-                items={items}
-                activeIndex={activeIndex}
-                onClickHandler={(newIndex) => {
-                  if (animating) return;
-                  setActiveIndex(newIndex);
-                }}
-              />
-              {carouselItemData}
-              <CarouselControl
-                directionText="Prev"
-                direction="prev"
-                onClickHandler={previousButton}
-              />
-              <CarouselControl
-                directionText="Next"
-                direction="next"
-                onClickHandler={nextButton}
-              />
-            </Carousel>
-          </div>
-          <div className="post-card-features">
-            <div className="features-cntr">
-              <div className="feature">
-                <span>
-                  1{` `}
-                  <FaToilet className="feature-icon" />
-                </span>
-                <span>toilet</span>
-              </div>
-              <div className="feature">
-                <span>
-                  1{` `}
-                  <FaBath className="feature-icon" />
-                </span>
-                <span>bathroom</span>
-              </div>
-              <div className="feature">
-                <span>
-                  2{` `}
-                  <FaBed className="feature-icon" />
-                </span>
-                <span>bedroom</span>
-              </div>
-              <div className="feature">
-                <span>
-                  1{` `}
-                  <FaCar className="feature-icon" />
-                </span>
-                <span>car space</span>
-              </div>
-              <LikeButton />
+        {error && <div>{error}</div>}
+        {isPending && <h3>Loading...</h3>}
+        {post && (
+          <div className="post-card">
+            {/* <!-- name of the advert --> */}
+            <div className="post-card-title">
+              <span>
+                <p>Grey Hostel</p>
+                <span className="price">200,000</span>
+              </span>
+              <span>
+                <p>Posted by Mr. Lorem ipsum</p>
+                <p>21/03/2021</p>
+              </span>
             </div>
-          </div>
-          <div className="post-card-body">
-            {/* <!-- title --> */}
-            <h4 className="post-title">Grey Hostel serviced apartment</h4>
-            <h4>Akoka road, Yaba, Lagos</h4>
+            <div className="post-card-image">
+              <PostBadges />
+              <PostBadges verified={post.verified} review={post.review} />
+              <Carousel
+                previous={previousButton}
+                next={nextButton}
+                activeIndex={activeIndex}
+                interval={null}
+                slide={false}>
+                <CarouselIndicators
+                  items={items}
+                  activeIndex={activeIndex}
+                  onClickHandler={(newIndex) => {
+                    if (animating) return;
+                    setActiveIndex(newIndex);
+                  }}
+                />
+                {carouselItemData}
+                <CarouselControl
+                  directionText="Prev"
+                  direction="prev"
+                  onClickHandler={previousButton}
+                />
+                <CarouselControl
+                  directionText="Next"
+                  direction="next"
+                  onClickHandler={nextButton}
+                />
+              </Carousel>
+            </div>
+            <div className="post-card-features">
+              <div className="features-cntr">
+                <div className="feature">
+                  <span>
+                    1{` `}
+                    <FaToilet className="feature-icon" />
+                  </span>
+                  <span>toilet</span>
+                </div>
+                <div className="feature">
+                  <span>
+                    1{` `}
+                    <FaBath className="feature-icon" />
+                  </span>
+                  <span>bathroom</span>
+                </div>
+                <div className="feature">
+                  <span>
+                    2{` `}
+                    <FaBed className="feature-icon" />
+                  </span>
+                  <span>bedroom</span>
+                </div>
+                <div className="feature">
+                  <span>
+                    1{` `}
+                    <FaCar className="feature-icon" />
+                  </span>
+                  <span>car space</span>
+                </div>
+                <LikeButton />
+              </div>
+            </div>
+            <div className="post-card-body">
+              {/* <!-- title --> */}
+              <h4 className="post-title">Grey Hostel serviced apartment</h4>
+              <h4>Akoka road, Yaba, Lagos</h4>
 
-            {/* <!-- price --> */}
-            <p className="ad-price">
-              <span className="price">200,000</span> per session
-            </p>
-            {/* <!-- description title --> */}
-            <h4 className="post-body-title">Property Description</h4>
-            {/* <!-- description  --> */}
-            <p className="post-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-              iure atque animi? Odio doloribus sint dolorem harum atque nobis
-              repellendus? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Rerum, voluptatem nesciunt molestias modi voluptates atque
-              sed quas maxime tenetur aliquid deleniti totam repellendus ab
-              obcaecati dolorem nostrum distinctio quisquam. Id!
-            </p>
+              {/* <!-- price --> */}
+              <p className="ad-price">
+                <span className="price">200,000</span> per session
+              </p>
+              {/* <!-- description title --> */}
+              <h4 className="post-body-title">Property Description</h4>
+              {/* <!-- description  --> */}
+              <p className="post-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                iure atque animi? Odio doloribus sint dolorem harum atque nobis
+                repellendus? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Rerum, voluptatem nesciunt molestias modi voluptates atque
+                sed quas maxime tenetur aliquid deleniti totam repellendus ab
+                obcaecati dolorem nostrum distinctio quisquam. Id!
+              </p>
+            </div>
+            <PostCardTable />
+            <PostTags />
           </div>
-          <PostCardTable />
-          <PostTags />
-        </div>
+        )}
         {/* <!-- cta --> */}
         <div className="post-cta-btns">
           {/* <!-- the chat with agent button --> */}

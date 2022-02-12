@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./VerifiedBadge.scss";
 import { FaCheckCircle } from "react-icons/fa";
 
 const VerifiedBadge = ({ verified }) => {
-  const [confirmVerified, setConfirmVerified] = useState(verified);
+  const confirmVerified = verified;
 
   return (
     <div className="verified-badge">
