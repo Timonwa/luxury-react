@@ -6,7 +6,6 @@ const RatingsBadge = ({ reviews }) => {
   let totalRatings = 0;
   reviews.map((review) => (totalRatings += review.ratings));
   const ratings = parseFloat((totalRatings / reviews.length).toFixed(1));
-  console.log(ratings);
 
   return (
     <div className="ratings-badge">
