@@ -181,7 +181,7 @@ const PostCard = () => {
           <PostCardTable />
           <PostTags />
         </div>
-        {/* <!-- cta --> */}
+        
         <div className="post-cta-btns">
           {/* <!-- the chat with agent button --> */}
           <button className="cta-btn chat-btn" type="button">
