@@ -1,18 +1,19 @@
 import React from "react";
-import "./NotFound.scss";
+import "./NotFoundPage.scss";
 import Footer from "../../components/Footer/Footer";
+import NotFound from "../../components/NotFound/NotFound";
 import NavBar from "../../components/NavBar/NavBar";
 import ChatBubble from "../../components/ChatBubble/ChatBubble";
 
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <section className="notfound-page">
       <NavBar />
-      <div className="notfound-message">Page Not Found</div>;
+      <NotFound />
       <ChatBubble />
       <Footer />
     </section>
   );
 };
 
-export default NotFound;
+export default NotFoundPage;
