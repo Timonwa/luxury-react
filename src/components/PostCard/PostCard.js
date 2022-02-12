@@ -195,8 +195,8 @@ const PostCard = () => {
           <button className="cta-btn book-btn" type="button">
             <a href="https://example.com">Book Inspection</a>
           </button>
-        </div>
-      </div>)}
+        </div>)}
+      </div>
     </main>
   );
 };
