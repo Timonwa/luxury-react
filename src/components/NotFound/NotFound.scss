@@ -61,7 +61,7 @@ $main-font: sans-serif;
   }
   .notfound-body {
     width: 40%;
-    padding: 20px;
+    padding: 0 20px;
     margin-left: 20px;
   }
   .notfound-body__items > h1 {
@@ -102,6 +102,9 @@ $main-font: sans-serif;
     .notfound-section-wrapper {
       padding: $section-wrapper-padding;
       flex-direction: column;
+    }
+    .notfound-body{
+    margin-left: 20px;
     }
     .notfound-image {
       width: 100%;
