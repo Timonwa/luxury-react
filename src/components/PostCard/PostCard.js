@@ -16,9 +16,21 @@ import {
   CarouselIndicators,
 } from "reactstrap";
 import { useParams } from "react-router";
+import useFetch from "../hooks/useFetch/useFetch";
+
 
 const PostCard = () => {
   const { id } = useParams();
+  const {
+    data: post,
+    isPending,
+    error,
+  } = useFetch("https://luxury-react-api.herokuapp.com/posts/" + id);
+  // const {
+  //   data: post,
+  //   isPending,
+  //   error,
+  // } = useFetch("http://localhost:3000/posts/" + id);
 
   // State for Active index
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -74,22 +86,23 @@ const PostCard = () => {
   return (
     <main className="post-section">
       <div className="post-section-wrapper">
-        <p>id is {id}</p>
-        <div className="post-card">
+        {error && <div>{error}</div>}
+        {isPending && <h3>Loading...</h3>}
+        {post && <div className="post-card">
           {/* <!-- name of the advert --> */}
           <div className="post-card-title">
             <span>
-              <p>Grey Hostel</p>
-              <span className="price">200,000</span>
+              <p>{post.name}</p>
+              <span className="price">{post.features.price}</span>
             </span>
             <span>
-              <p>Posted by Mr. Lorem ipsum</p>
-              <p>21/03/2021</p>
+              <p>Posted by {post.agent}</p>
+              <p>{post.date}</p>
             </span>
           </div>
           <div className="post-card-image">
-            <PostBadges />
-            {/* <PostBadges verified={post.verified} review={post.review} /> */}
+            {/* <PostBadges /> */}
+            <PostBadges verified={post.verified} review={post.review} />
             <Carousel
               previous={previousButton}
               next={nextButton}
@@ -121,28 +134,28 @@ const PostCard = () => {
             <div className="features-cntr">
               <div className="feature">
                 <span>
-                  1{` `}
+                  {`${post.features.toilet} `}
                   <FaToilet className="feature-icon" />
                 </span>
                 <span>toilet</span>
               </div>
               <div className="feature">
                 <span>
-                  1{` `}
+                  {`${post.features.bathroom} `}
                   <FaBath className="feature-icon" />
                 </span>
                 <span>bathroom</span>
               </div>
               <div className="feature">
                 <span>
-                  2{` `}
+                  {`${post.features.bedroom} `}
                   <FaBed className="feature-icon" />
                 </span>
                 <span>bedroom</span>
               </div>
               <div className="feature">
                 <span>
-                  1{` `}
+                  {`${post.features.car_space} `}
                   <FaCar className="feature-icon" />
                 </span>
                 <span>car space</span>
@@ -152,23 +165,17 @@ const PostCard = () => {
           </div>
           <div className="post-card-body">
             {/* <!-- title --> */}
-            <h4 className="post-title">Grey Hostel serviced apartment</h4>
-            <h4>Akoka road, Yaba, Lagos</h4>
+            <h4 className="post-title">{`${post.title} | ${post.location}`}</h4>
 
             {/* <!-- price --> */}
             <p className="ad-price">
-              <span className="price">200,000</span> per session
+              <span className="price">{post.features.price}</span>{` `}{post.features.duration}
             </p>
             {/* <!-- description title --> */}
             <h4 className="post-body-title">Property Description</h4>
             {/* <!-- description  --> */}
             <p className="post-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-              iure atque animi? Odio doloribus sint dolorem harum atque nobis
-              repellendus? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Rerum, voluptatem nesciunt molestias modi voluptates atque
-              sed quas maxime tenetur aliquid deleniti totam repellendus ab
-              obcaecati dolorem nostrum distinctio quisquam. Id!
+              {post.description}
             </p>
           </div>
           <PostCardTable />
@@ -189,7 +196,7 @@ const PostCard = () => {
             <a href="https://example.com">Book Inspection</a>
           </button>
         </div>
-      </div>
+      </div>}
     </main>
   );
 };
