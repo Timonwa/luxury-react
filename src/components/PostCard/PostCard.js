@@ -25,7 +25,7 @@ const PostCard = () => {
     data: post,
     isPending,
     error,
-  } = useFetch("https://luxury-react-api.herokuapp.com/posts/" + id);
+  } = useFetch("https://luxury-react-api.herokuapp.com/post/" + id);
   // const {
   //   data: post,
   //   isPending,
