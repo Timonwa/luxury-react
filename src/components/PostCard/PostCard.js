@@ -23,12 +23,13 @@ const PostCard = () => {
   //   data: posts,
   //   isPending,
   //   error,
-  // } = useFetch("https://luxury-react-api.herokuapp.com/posts" + id);
+  // } = useFetch("https://luxury-react-api.herokuapp.com/posts/" + id);
   const {
     data: post,
     isPending,
     error,
-  } = useFetch("http://localhost:3000/posts" + id);
+  } = useFetch("http://localhost:3000/posts/" + id );
+  console.log(post);
 
   // State for Active index
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -101,8 +102,8 @@ const PostCard = () => {
               </span>
             </div>
             <div className="post-card-image">
-              <PostBadges />
-              <PostBadges verified={post.verified} review={post.review} />
+              {/* <PostBadges /> */}
+              {/* <PostBadges verified={post.verified} reviews={post.reviews} /> */}
               <Carousel
                 previous={previousButton}
                 next={nextButton}
