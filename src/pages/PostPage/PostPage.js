@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
-import ApartmentReviews from "../../components/ApartmentReviews/ApartmentReviews";
+// import ApartmentReviews from "../../components/ApartmentReviews/ApartmentReviews";
 import SearchCard from "../../components/SearchCard/SearchCard";
 import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./PostPage.scss";
@@ -23,7 +23,7 @@ const PostPage = () => {
         </div>
       </header>
       <PostCard />
-      <ApartmentReviews />
+      {/* <ApartmentReviews /> */}
       <RegisterCTA />
       <Footer />
       <ChatBubble />
