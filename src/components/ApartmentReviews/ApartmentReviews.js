@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ApartmentReviews.scss";
 import ApartmentRatingsBadge from "../hooks/ApartmentRatingsBadge/ApartmentRatingsBadge";
 
 const ApartmentReviews = ({ reviews }) => {
+  const [showViewMore, setShowViewMore] = useState(false);
+  if (reviews.length !== 0) {
+    setShowViewMore(true);
+  }
+
   return (
     <section className="ad-reviews-section">
       <div className="ad-reviews-wrapper">
@@ -29,7 +34,7 @@ const ApartmentReviews = ({ reviews }) => {
             </div>
           ))}
         </div>
-        <p className="load-more-btn">view more...</p>
+        {showViewMore && <p className="load-more-btn">view more...</p>}
       </div>
     </section>
   );
