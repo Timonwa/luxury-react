@@ -97,8 +97,8 @@ const PostCard = () => {
                   {/* <!-- description  --> */}
                   <p className="post-body">{post.description}</p>
                 </div>
-                <PostCardTable />
-                <PostTags />
+                <PostCardTable features={post.features} />
+                <PostTags tags={post.tags} />
               </div>
 
               <div className="post-cta-btns">
