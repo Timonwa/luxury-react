@@ -9,24 +9,22 @@ const PostCardPreview = ({ posts }) => {
   return (
     <>
       {posts.map((post) => (
-        <div className="post-card-preview">
+        <div className="post-card-preview" key={post.id}>
           <div className="post-card-preview__image">
-            <Link to="/post">
-              <PostBadges />
+            <Link to={`/post/${post.id}`}>
+              <PostBadges verified={post.verified} reviews={post.reviews} />
               {/* <!-- images of the adverts --> */}
               <img className="ad-pic" src={post.images[0]} alt={post.title} />
             </Link>
           </div>
           <div className="post-card-preview__body">
             <div className="post-card-preview__brief">
-              <Link to="/post">
+              <Link to={`/post/${post.id}`}>
                 {/* <!-- name and location --> */}
                 <h4 className="ad-link">
-                  <Link className="ad-title" to="/post">
-                    {post.title}
-                    {` | `}
-                    <small className="ad-location">{post.location}</small>
-                  </Link>
+                  {post.title}
+                  {` | `}
+                  <small className="ad-location">{post.location}</small>
                 </h4>
                 {/* <!-- price --> */}
                 <h4 className="ad-price">

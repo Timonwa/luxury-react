@@ -1,10 +1,12 @@
 import React from "react";
 import "./PostTags.scss";
 
-const PostTags = () => {
+const PostTags = ({tags}) => {
   return (
     <div className="post-card-tags">
-      <span className="tags">hostel</span>
+      {tags.map((tag) => (
+        <span className="tags" key={tag}>{tag}</span>
+      ))}
     </div>
   );
 };

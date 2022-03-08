@@ -77,7 +77,7 @@ const SignUp = () => {
         <h3>SIGN UP</h3>
         <div className="group1">
           <div className="form-input-group">
-            <label className="form-input-label" for="name" hidden></label>
+            <label className="form-input-label" htmlFor="name" hidden></label>
             <input
               className="form-input"
               type="text"
@@ -89,7 +89,7 @@ const SignUp = () => {
             {errors.userName && errors.userName.message}
           </p>
           <div className="form-input-group">
-            <label className="form-input-label" for="email" hidden></label>
+            <label className="form-input-label" htmlFor="email" hidden></label>
             <input
               className="form-input"
               type="email"
@@ -101,7 +101,7 @@ const SignUp = () => {
             {errors.userEmail && errors.userEmail.message}
           </p>
           <div className="form-input-group">
-            <label className="form-input-label" for="password" hidden></label>
+            <label className="form-input-label" htmlFor="password" hidden></label>
             <input
               className="form-input"
               type={!viewPassword ? "password" : "text"}
@@ -123,7 +123,7 @@ const SignUp = () => {
           <div className="form-input-group">
             <label
               className="form-input-label"
-              for="confirm-password"
+              htmlFor="confirm-password"
               hidden></label>
             <input
               className="form-input"
@@ -163,7 +163,7 @@ const SignUp = () => {
                 type="checkbox"
                 {...register("acceptTerms", registerOptions.acceptTerms)}
               />
-              <label for="acceptTerms">
+              <label htmlFor="acceptTerms">
                 I accept the{" "}
                 <Link className="terms-cons" to="">
                   terms and conditions

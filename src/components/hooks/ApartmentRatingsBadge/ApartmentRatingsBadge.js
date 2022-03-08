@@ -1,12 +1,8 @@
 import React from "react";
-import "./RatingsBadge.scss";
+import "./ApartmentRatingsBadge.scss";
 import { FaStar, FaStarHalf, FaRegStar } from "react-icons/fa";
 
-const RatingsBadge = ({ reviews }) => {
-  let totalRatings = 0;
-  reviews.map((review) => (totalRatings += review.ratings));
-  const ratings = parseFloat((totalRatings / reviews.length).toFixed(1));
-
+const RatingsBadge = ({ ratings }) => {
   return (
     <div className="ratings-badge">
       {ratings === 5 && (
