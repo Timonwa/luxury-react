@@ -1,7 +1,7 @@
 import React from "react";
 import "./PostCardTable.scss";
 
-const PostCardTable = () => {
+const PostCardTable = ({ features }) => {
   return (
     <div className="post-card-table">
       {/* <!-- table of additional features --> */}
@@ -21,10 +21,10 @@ const PostCardTable = () => {
             <th>Serviced Apartment</th>
           </tr>
           <tr>
-            <td name="Type">Hostel</td>
-            <td name="Person per room">2</td>
-            <td name="Gender">Female</td>
-            <td name="Serviced Apartment">Yes</td>
+            <td name="Type">{features.type}</td>
+            <td name="Person per room">{features.person_per_room}</td>
+            <td name="Gender">{features.gender}</td>
+            <td name="Serviced Apartment">{features.serviced_apartment}</td>
           </tr>
         </tbody>
         <thead>
@@ -42,10 +42,10 @@ const PostCardTable = () => {
             <th>Slots available</th>
           </tr>
           <tr>
-            <td name="Duration">per school session</td>
-            <td name="Price">200,000</td>
-            <td name="Installmental payments">No</td>
-            <td name="Slots available">5</td>
+            <td name="Duration">{features.duration}</td>
+            <td name="Price">{features.price}</td>
+            <td name="Installmental payments">{features.installments}</td>
+            <td name="Slots available">{features.slots}</td>
           </tr>
         </tbody>
         <thead>
@@ -63,10 +63,10 @@ const PostCardTable = () => {
             <th>Bathroom</th>
           </tr>
           <tr>
-            <td name="Room">1</td>
-            <td name="Kitchen">1</td>
-            <td name="Toilet">1</td>
-            <td name="Bathroom">1</td>
+            <td name="Room">{features.room}</td>
+            <td name="Kitchen">{features.kitchen}</td>
+            <td name="Toilet">{features.toilet}</td>
+            <td name="Bathroom">{features.bathroom}</td>
           </tr>
         </tbody>
         <thead>
@@ -84,10 +84,10 @@ const PostCardTable = () => {
             <th>Reading/Common room</th>
           </tr>
           <tr>
-            <td name="Security">24hrs</td>
-            <td name="Electricity">24hrs</td>
-            <td name="Water">constant</td>
-            <td name="Reading/Common room">No</td>
+            <td name="Security">{features.security}</td>
+            <td name="Electricity">{features.electricity}</td>
+            <td name="Water">{features.water}</td>
+            <td name="Reading/Common room">{features.common_room}</td>
           </tr>
         </tbody>
         <tbody>
@@ -98,10 +98,10 @@ const PostCardTable = () => {
             <th>Wardrobe</th>
           </tr>
           <tr>
-            <td name="Bed">Yes</td>
-            <td name="Mattress">No</td>
-            <td name="Cupboard">No</td>
-            <td name="Wardrobe">Yes</td>
+            <td name="Bed">{features.bedroom}</td>
+            <td name="Mattress">{features.mattress}</td>
+            <td name="Cupboard">{features.cupboard}</td>
+            <td name="Wardrobe">{features.wardrobe}</td>
           </tr>
         </tbody>
         <tbody>
@@ -112,10 +112,10 @@ const PostCardTable = () => {
             <th>AirCon</th>
           </tr>
           <tr>
-            <td name="Gas">Yes</td>
-            <td name="Gen">Yes</td>
-            <td name="Fan">Yes</td>
-            <td name="AirCon">Yes</td>
+            <td name="Gas">{features.gas}</td>
+            <td name="Gen">{features.gen}</td>
+            <td name="Fan">{features.fan}</td>
+            <td name="AirCon">{features.ac}</td>
           </tr>
         </tbody>
         <tbody>
@@ -126,10 +126,10 @@ const PostCardTable = () => {
             <th>Visitation</th>
           </tr>
           <tr>
-            <td name="Cleaning service">Yes</td>
-            <td name="Laundering service">Yes</td>
-            <td name="Security">Yes</td>
-            <td name="Visitation">Visitation Allowed</td>
+            <td name="Cleaning service">{features.cleaning}</td>
+            <td name="Laundering service">{features.laundry}</td>
+            <td name="Security">{features.security}</td>
+            <td name="Visitation">{features.visitation}</td>
           </tr>
         </tbody>
         <tbody>
@@ -140,10 +140,10 @@ const PostCardTable = () => {
             <th>Wifi</th>
           </tr>
           <tr>
-            <td name="Tv">Yes</td>
-            <td name="Cable Tv">Yes</td>
-            <td name="Car Park">Yes</td>
-            <td name="Wifi">No</td>
+            <td name="Tv">{features.tv}</td>
+            <td name="Cable Tv">{features.cable_tv}</td>
+            <td name="Car Park">{features.car_park}</td>
+            <td name="Wifi">{features.wifi}</td>
           </tr>
         </tbody>
         <thead>
@@ -160,10 +160,10 @@ const PostCardTable = () => {
           </tr>
           <tr>
             <td colSpan="2" name="Inspection days">
-              Mon, Thurs
+              {features.inspection_days.join(",")}
             </td>
             <td colSpan="2" name="Inspection hours">
-              12pm-2pm
+              {features.inspection_hours.join("-")}
             </td>
           </tr>
         </tbody>
@@ -181,10 +181,10 @@ const PostCardTable = () => {
             <th colSpan="2">Proximity to school</th>
           </tr>
           <tr>
-            <td name="Proximity to road">5/5</td>
-            <td name="Proximity to market">5/5</td>
+            <td name="Proximity to road">{features.road_proximity}/5</td>
+            <td name="Proximity to market">{features.market_proximity}/5</td>
             <td colSpan="2" name="Proximity to school">
-              4/5
+              {features.school_proximity}/5
             </td>
           </tr>
         </tbody>
