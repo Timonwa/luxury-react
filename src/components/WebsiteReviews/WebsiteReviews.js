@@ -20,8 +20,8 @@ const WebsiteReviews = () => {
       <div className="company-reviews-section-wrapper">
         <h3 className="section-title">Reviews</h3>
         <div className="company-reviews-cntr">
-          {error && <div>{error}</div>}
-          {isPending && <h3>Loading...</h3>}
+          {error && <div className="error">{error}</div>}
+          {isPending && <h3 className="loading">Loading...</h3>}
           {items && <ReviewCarousel items={items} />}
         </div>
       </div>

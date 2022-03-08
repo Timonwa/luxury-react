@@ -210,7 +210,7 @@
         "inspection_hours": ["12pm", "4pm"],
         "road_proximity": "5",
         "market_proximity": "5",
-        "school_proximity": ""
+        "school_proximity": "-"
       },
       "tags": ["apartment", "bariga", "female", "male", "2 bedroom", "yaba"],
       "reviews": []
@@ -266,7 +266,7 @@
         "inspection_hours": ["9am", "12pm"],
         "road_proximity": "5",
         "market_proximity": "3",
-        "school_proximity": ""
+        "school_proximity": "-"
       },
       "tags": ["selfcon", "akoka", "female", "male", "1 room", "somolu"],
       "reviews": []
@@ -584,11 +584,11 @@
         "cable_tv": "Yes",
         "car_park": "Yes",
         "wifi": "Yes",
-        "inspection_days": [],
-        "inspection_hours": [],
+        "inspection_days": ["-"],
+        "inspection_hours": ["-"],
         "road_proximity": "5",
         "market_proximity": "-",
-        "school_proximity": ""
+        "school_proximity": "-"
       },
       "tags": ["apartment", "ikoyi", "serviced apartment", "2 bedroom"],
       "reviews": [
@@ -678,11 +678,11 @@
         "cable_tv": "No",
         "car_park": "Yes",
         "wifi": "No",
-        "inspection_days": [],
-        "inspection_hours": [],
+        "inspection_days": ["-"],
+        "inspection_hours": ["-"],
         "road_proximity": "5",
         "market_proximity": "-",
-        "school_proximity": ""
+        "school_proximity": "-"
       },
       "tags": ["roommate needed", "jibowu", "shared apartment", "selfcon"],
       "reviews": []
@@ -738,11 +738,11 @@
         "cable_tv": "-",
         "car_park": "Yes",
         "wifi": "-",
-        "inspection_days": [],
-        "inspection_hours": [],
+        "inspection_days": ["-"],
+        "inspection_hours": ["-"],
         "road_proximity": "5",
         "market_proximity": "-",
-        "school_proximity": ""
+        "school_proximity": "-"
       },
       "tags": ["apartment", "lawanson", "surulere", "3 bedroom"],
       "reviews": []
@@ -978,11 +978,11 @@
         "cable_tv": "-",
         "car_park": "Yes",
         "wifi": "-",
-        "inspection_days": [],
-        "inspection_hours": [],
+        "inspection_days": ["-"],
+        "inspection_hours": ["-"],
         "road_proximity": "5",
         "market_proximity": "-",
-        "school_proximity": ""
+        "school_proximity": "-"
       },
       "tags": ["apartment", "akoka", "male", "shared apartment", "2 bedroom"],
       "reviews": []

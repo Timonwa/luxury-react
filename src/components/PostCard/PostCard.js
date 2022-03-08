@@ -25,8 +25,8 @@ const PostCard = () => {
 
   return (
     <>
-      {error && <div>{error}</div>}
-      {isPending && <h3>Loading...</h3>}
+      {error && <div className="error">{error}</div>}
+      {isPending && <h3 className="loading">Loading...</h3>}
       {post && (
         <>
           <main className="post-section">
