@@ -12,16 +12,16 @@ import ApartmentReviews from "../ApartmentReviews/ApartmentReviews";
 
 const PostCard = () => {
   const { id } = useParams();
-  // const {
-  // data: post,
-  // isPending,
-  // error,
-  // } = useFetch("https://luxury-react-api.herokuapp.com/post/" + id);
   const {
-    data: post,
-    isPending,
-    error,
-  } = useFetch("http://localhost:3000/posts/" + id);
+  data: post,
+  isPending,
+  error,
+  } = useFetch("https://luxury-react-api.herokuapp.com/posts/" + id);
+  // const {
+  //   data: post,
+  //   isPending,
+  //   error,
+  // } = useFetch("http://localhost:3000/posts/" + id);
 
   return (
     <>
