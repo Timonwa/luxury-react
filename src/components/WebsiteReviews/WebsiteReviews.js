@@ -4,16 +4,16 @@ import ReviewCarousel from "./ReviewCarousel";
 import useFetch from "../hooks/useFetch/useFetch";
 
 const WebsiteReviews = () => {
-  // const {
-  //   data: items,
-  //   isPending,
-  //   error,
-  // } = useFetch("https://luxury-react-api.herokuapp.com/websiteReviews");
   const {
     data: items,
     isPending,
     error,
-  } = useFetch("http://localhost:3000/websiteReviews");
+  } = useFetch("https://luxury-react-api.herokuapp.com/websiteReviews");
+  // const {
+  //   data: items,
+  //   isPending,
+  //   error,
+  // } = useFetch("http://localhost:3000/websiteReviews");
 
   return (
     <section className="company-reviews-section">
