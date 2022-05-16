@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
@@ -9,11 +9,21 @@ import ChatBubble from "../../components/ChatBubble/ChatBubble";
 import WebsiteReviews from "../../components/WebsiteReviews/WebsiteReviews";
 import FeaturedPosts from "../../components/FeaturedPosts/FeaturedPosts";
 import AboutUs from "../../components/AboutUs/AboutUs";
+import useFetch from "../../components/hooks/useFetch/useFetch";
 
 const Homepage = () => {
+  const [url, setUrl] = useState(
+    "https://luxury-react-api.herokuapp.com/posts"
+  );
+  const { data: posts, isPending, error } = useFetch(url);
+  // const {
+  //   data: posts,
+  //   isPending,
+  //   error,
+  // } = useFetch(url);
   useEffect(() => {
-    window.scroll(0,0)
-  }, [])
+    window.scroll(0, 0);
+  }, [url]);
 
   return (
     <div className="homepage">
@@ -30,7 +40,7 @@ const Homepage = () => {
         </div>
       </header>
       <WebsiteReviews />
-      <FeaturedPosts />
+      <FeaturedPosts posts={posts} isPending={isPending} error={error} />
       <AboutUs />
       <HowItWorks />
       <RegisterCTA />
