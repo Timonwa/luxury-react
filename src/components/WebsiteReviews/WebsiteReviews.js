@@ -4,6 +4,17 @@ import ReviewCarousel from "./ReviewCarousel";
 import useFetch from "../hooks/useFetch/useFetch";
 
 const WebsiteReviews = () => {
+  // const {
+  //   data: items,
+  //   isPending,
+  //   error,
+  // } = useFetch("https://luxury-react-api.herokuapp.com/websiteReviews");
+  // const {
+  //   data: items,
+  //   isPending,
+  //   error,
+  // } = useFetch("http://localhost:3000/websiteReviews");
+
   const websiteReviews = [
     {
       id: 1,
@@ -41,22 +52,14 @@ const WebsiteReviews = () => {
         "Lorem ipsum dolor sit amet consectetu adipis, accusantium magnam laborum ducimus corrupti inventore illum a!",
     },
   ];
-
-  const { data: items, isPending, error } = useFetch(websiteReviews);
-  // const {
-  //   data: items,
-  //   isPending,
-  //   error,
-  // } = useFetch("http://localhost:3000/websiteReviews");
-
   return (
     <section className="company-reviews-section">
       <div className="company-reviews-section-wrapper">
         <h3 className="section-title">Reviews</h3>
         <div className="company-reviews-cntr">
-          {error && <div className="error">{error}</div>}
-          {isPending && <h3 className="loading">Loading...</h3>}
-          {items && <ReviewCarousel items={items} />}
+          {/* {error && <div className="error">{error}</div>} */}
+          {/* {isPending && <h3 className="loading">Loading...</h3>} */}
+          {websiteReviews && <ReviewCarousel items={websiteReviews} />}
         </div>
       </div>
     </section>
