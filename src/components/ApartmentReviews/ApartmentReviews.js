@@ -15,7 +15,7 @@ const ApartmentReviews = ({ reviews }) => {
                 <ApartmentRatingsBadge ratings={review.ratings} />
                 <div className="user-name-date">
                   {/* <!-- user name --> */}
-                  <h3 className="user-ad-name">{review.userName}</h3>
+                  <p className="user-ad-name">{review.userName}</p>
                   {/* <!-- date the post was made --> */}
                   <p className="user-ad-review-date">
                     <small>{review.date}</small>

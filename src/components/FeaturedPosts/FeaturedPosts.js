@@ -9,8 +9,8 @@ const FeaturedPosts = ({ posts, isPending, error }) => {
       <div className="feature-posts-section-wrapper">
         <h3 className="section-title">Posts</h3>
         {/* <!-- the ads --> */}
-        {error && <div className="error">{error}</div>}
-        {isPending && <h3 className="loading">Loading...</h3>}
+        {/* {error && <div className="error">{error}</div>}
+        {isPending && <h3 className="loading">Loading...</h3>} */}
         <div className="feature-posts-cntr">
           {posts && <PostCardPreview posts={posts} />}
         </div>
