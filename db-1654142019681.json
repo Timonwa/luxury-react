@@ -66,19 +66,25 @@
       "id": 4,
       "name": "Jide Sanwolu",
       "email": "sanwoluJ@gmail.com",
-      "adverts": ["04-01-210320211203"]
+      "adverts": [
+        "04-01-210320211203"
+      ]
     },
     {
       "id": 5,
       "name": "Bode Bankole",
       "email": "bbankonle@gmail.com",
-      "adverts": ["05-01-020420212304"]
+      "adverts": [
+        "05-01-020420212304"
+      ]
     },
     {
       "id": 6,
       "name": "Solomon Ndubuisi",
       "email": "solomonndubuisi@gmail.com",
-      "adverts": ["06-01-070820211415"]
+      "adverts": [
+        "06-01-070820211415"
+      ]
     }
   ],
   "posts": [
@@ -131,8 +137,15 @@
         "cable_tv": "No",
         "car_park": "No",
         "wifi": "No",
-        "inspection_days": ["Mon", "Weds", "Thurs"],
-        "inspection_hours": ["10am", "3pm"],
+        "inspection_days": [
+          "Mon",
+          "Weds",
+          "Thurs"
+        ],
+        "inspection_hours": [
+          "10am",
+          "3pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "5",
         "school_proximity": "5"
@@ -212,13 +225,29 @@
         "cable_tv": "No",
         "car_park": "Yes",
         "wifi": "No",
-        "inspection_days": ["Mon", "Tues", "Weds", "Thurs", "Fri"],
-        "inspection_hours": ["12pm", "4pm"],
+        "inspection_days": [
+          "Mon",
+          "Tues",
+          "Weds",
+          "Thurs",
+          "Fri"
+        ],
+        "inspection_hours": [
+          "12pm",
+          "4pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "5",
         "school_proximity": "-"
       },
-      "tags": ["apartment", "bariga", "female", "male", "2 bedroom", "yaba"],
+      "tags": [
+        "apartment",
+        "bariga",
+        "female",
+        "male",
+        "2 bedroom",
+        "yaba"
+      ],
       "reviews": []
     },
     {
@@ -268,13 +297,27 @@
         "cable_tv": "No",
         "car_park": "No",
         "wifi": "No",
-        "inspection_days": ["Mon", "Tues", "Thurs"],
-        "inspection_hours": ["9am", "12pm"],
+        "inspection_days": [
+          "Mon",
+          "Tues",
+          "Thurs"
+        ],
+        "inspection_hours": [
+          "9am",
+          "12pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "3",
         "school_proximity": "-"
       },
-      "tags": ["selfcon", "akoka", "female", "male", "1 room", "somolu"],
+      "tags": [
+        "selfcon",
+        "akoka",
+        "female",
+        "male",
+        "1 room",
+        "somolu"
+      ],
       "reviews": []
     },
     {
@@ -326,8 +369,14 @@
         "cable_tv": "Yes",
         "car_park": "Yes",
         "wifi": "No",
-        "inspection_days": ["Mon", "Thurs"],
-        "inspection_hours": ["12pm", "2pm"],
+        "inspection_days": [
+          "Mon",
+          "Thurs"
+        ],
+        "inspection_hours": [
+          "12pm",
+          "2pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "5",
         "school_proximity": "4"
@@ -420,8 +469,14 @@
         "cable_tv": "Yes",
         "car_park": "Yes",
         "wifi": "No",
-        "inspection_days": ["Mon", "Thurs"],
-        "inspection_hours": ["12pm", "2pm"],
+        "inspection_days": [
+          "Mon",
+          "Thurs"
+        ],
+        "inspection_hours": [
+          "12pm",
+          "2pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "5",
         "school_proximity": "4"
@@ -514,8 +569,14 @@
         "cable_tv": "Yes",
         "car_park": "Yes",
         "wifi": "No",
-        "inspection_days": ["Mon", "Thurs"],
-        "inspection_hours": ["12pm", "2pm"],
+        "inspection_days": [
+          "Mon",
+          "Thurs"
+        ],
+        "inspection_hours": [
+          "12pm",
+          "2pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "5",
         "school_proximity": "4"
@@ -590,13 +651,22 @@
         "cable_tv": "Yes",
         "car_park": "Yes",
         "wifi": "Yes",
-        "inspection_days": ["-"],
-        "inspection_hours": ["-"],
+        "inspection_days": [
+          "-"
+        ],
+        "inspection_hours": [
+          "-"
+        ],
         "road_proximity": "5",
         "market_proximity": "-",
         "school_proximity": "-"
       },
-      "tags": ["apartment", "ikoyi", "serviced apartment", "2 bedroom"],
+      "tags": [
+        "apartment",
+        "ikoyi",
+        "serviced apartment",
+        "2 bedroom"
+      ],
       "reviews": [
         {
           "id": 1,
@@ -684,13 +754,22 @@
         "cable_tv": "No",
         "car_park": "Yes",
         "wifi": "No",
-        "inspection_days": ["-"],
-        "inspection_hours": ["-"],
+        "inspection_days": [
+          "-"
+        ],
+        "inspection_hours": [
+          "-"
+        ],
         "road_proximity": "5",
         "market_proximity": "-",
         "school_proximity": "-"
       },
-      "tags": ["roommate needed", "jibowu", "shared apartment", "selfcon"],
+      "tags": [
+        "roommate needed",
+        "jibowu",
+        "shared apartment",
+        "selfcon"
+      ],
       "reviews": []
     },
     {
@@ -744,13 +823,22 @@
         "cable_tv": "-",
         "car_park": "Yes",
         "wifi": "-",
-        "inspection_days": ["-"],
-        "inspection_hours": ["-"],
+        "inspection_days": [
+          "-"
+        ],
+        "inspection_hours": [
+          "-"
+        ],
         "road_proximity": "5",
         "market_proximity": "-",
         "school_proximity": "-"
       },
-      "tags": ["apartment", "lawanson", "surulere", "3 bedroom"],
+      "tags": [
+        "apartment",
+        "lawanson",
+        "surulere",
+        "3 bedroom"
+      ],
       "reviews": []
     },
     {
@@ -802,8 +890,15 @@
         "cable_tv": "No",
         "car_park": "No",
         "wifi": "No",
-        "inspection_days": ["Mon", "Weds", "Thurs"],
-        "inspection_hours": ["10am", "3pm"],
+        "inspection_days": [
+          "Mon",
+          "Weds",
+          "Thurs"
+        ],
+        "inspection_hours": [
+          "10am",
+          "3pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "5",
         "school_proximity": "5"
@@ -889,8 +984,15 @@
         "cable_tv": "No",
         "car_park": "No",
         "wifi": "No",
-        "inspection_days": ["Mon", "Weds", "Thurs"],
-        "inspection_hours": ["10am", "3pm"],
+        "inspection_days": [
+          "Mon",
+          "Weds",
+          "Thurs"
+        ],
+        "inspection_hours": [
+          "10am",
+          "3pm"
+        ],
         "road_proximity": "5",
         "market_proximity": "5",
         "school_proximity": "5"
@@ -984,13 +1086,23 @@
         "cable_tv": "-",
         "car_park": "Yes",
         "wifi": "-",
-        "inspection_days": ["-"],
-        "inspection_hours": ["-"],
+        "inspection_days": [
+          "-"
+        ],
+        "inspection_hours": [
+          "-"
+        ],
         "road_proximity": "5",
         "market_proximity": "-",
         "school_proximity": "-"
       },
-      "tags": ["apartment", "akoka", "male", "shared apartment", "2 bedroom"],
+      "tags": [
+        "apartment",
+        "akoka",
+        "male",
+        "shared apartment",
+        "2 bedroom"
+      ],
       "reviews": []
     }
   ]
