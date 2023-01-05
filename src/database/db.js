@@ -36,7 +36,7 @@ export const websiteReviews = [
   },
 ];
 
-export const posts = [
+export const allPosts = [
   {
     id: 1,
     postId: "01-01-10020201345",

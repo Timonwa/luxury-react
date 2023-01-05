@@ -26,7 +26,12 @@ const SearchCard = ({ handleSearch }) => {
           <select className="filter-search" {...register("location")}>
             <option value="">--Location--</option>
             <option value="yaba">Yaba</option>
-            <option value="ikoyi">Ikoyi</option>
+            <option value="abule oja">Abule Oja</option>
+            <option value="bariga">Bariga</option>
+            <option value="alagomeji">Alagomeji</option>
+            <option value="akoka">Akoka</option>
+            <option value="jibowu">Jibowu</option>
+            <option value="lawanson">Lawanson</option>
           </select>
           {/* <!-- form accommodation dropdown --> */}
           <select className="filter-search-input" {...register("type")}>
@@ -55,7 +60,7 @@ const SearchCard = ({ handleSearch }) => {
           <div className="filter2 filter-card">
             {/* <!-- number of bedroom --> */}
             <div className="filter-search-input">
-              <label for="bedroom">Bedrooms</label>
+              <label htmlFor="bedroom">Bedrooms</label>
               <select {...register("bedroom")}>
                 <option value="">Any</option>
                 <option value="1">1</option>
@@ -66,7 +71,7 @@ const SearchCard = ({ handleSearch }) => {
             </div>
             {/* <!-- number of toilet --> */}
             <div className="filter-search-input">
-              <label for="toilet">Toilets</label>
+              <label htmlFor="toilet">Toilets</label>
               <select {...register("toilet")}>
                 <option value="">Any</option>
                 <option value="1">1</option>
@@ -77,7 +82,7 @@ const SearchCard = ({ handleSearch }) => {
             </div>
             {/* <!-- number of bathroom --> */}
             <div className="filter-search-input">
-              <label for="bathroom">Bathrooms</label>
+              <label htmlFor="bathroom">Bathrooms</label>
               <select {...register("bathroom")}>
                 <option value="">Any</option>
                 <option value="1">1</option>
@@ -88,7 +93,7 @@ const SearchCard = ({ handleSearch }) => {
             </div>
             {/* <!-- serviced --> */}
             <div className="filter-search-input">
-              <label for="serviced">Serviced</label>
+              <label htmlFor="serviced">Serviced</label>
               <select {...register("serviced")}>
                 <option value="">Any</option>
                 <option value="Yes">Serviced</option>
@@ -97,7 +102,7 @@ const SearchCard = ({ handleSearch }) => {
             </div>
             {/* <!-- price range --> */}
             <div className="minmax-input">
-              <label for="min-range">Min price</label>
+              <label htmlFor="min-range">Min price</label>
               <input
                 {...register("minRange")}
                 type="number"
@@ -105,7 +110,7 @@ const SearchCard = ({ handleSearch }) => {
               />
             </div>
             <div>
-              <label for="max-range">Max price</label>
+              <label htmlFor="max-range">Max price</label>
               <input
                 {...register("maxRange")}
                 type="number"

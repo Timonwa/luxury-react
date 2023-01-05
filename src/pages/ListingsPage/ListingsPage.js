@@ -6,7 +6,7 @@ import Listings from "../../components/Listings/Listings";
 import RegisterCTA from "../../components/RegisterCTA/RegisterCTA";
 import "./ListingsPage.scss";
 import ChatBubble from "../../components/ChatBubble/ChatBubble";
-import { posts } from "../../database/db";
+import { allPosts } from "../../database/db";
 
 const ListingsPage = () => {
   return (
@@ -15,10 +15,10 @@ const ListingsPage = () => {
       <header className="header-section">
         <div className="header-wrapper">
           <div className="header-space"></div>
-          <SearchCard posts={posts} />
+          <SearchCard posts={allPosts} />
         </div>
       </header>
-      <Listings posts={posts} />
+      <Listings posts={allPosts} />
       <RegisterCTA />
       <Footer />
       <ChatBubble />

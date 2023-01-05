@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import SearchCard from "../../components/SearchCard/SearchCard";
@@ -9,42 +9,33 @@ import ChatBubble from "../../components/ChatBubble/ChatBubble";
 import WebsiteReviews from "../../components/WebsiteReviews/WebsiteReviews";
 import FeaturedPosts from "../../components/FeaturedPosts/FeaturedPosts";
 import AboutUs from "../../components/AboutUs/AboutUs";
-import { posts } from "../../database/db";
+import { allPosts } from "../../database/db";
 
 const Homepage = () => {
-  // fetch url
-  // const url = "http://localhost:3002/posts";
-  // const url = "https://luxury-react-api.herokuapp.com/posts";
-
-  // use fetch to get data from the api
-  // const { data: posts, isPending, error } = useFetch(url);
-
-  // let allPosts = posts;
-  const [allPosts, setAllPosts] = useState(posts);
+  const [posts, setPosts] = useState(allPosts);
 
   let searchPosts;
 
   // search function
   const handleSearch = (data) => {
     const location = data.location;
-    const type = "hostel";
-    const sortBy = "old";
-    const price = "low";
-    const bedroom = "1";
-    const toilet = "1";
-    const bathroom = "1";
-    const serviced = "Yes";
-    const minPrice = "150000";
-    const maxPrice = "200000";
-    console.log(location);
+    const type = data.type;
+    const sortBy = data.sortBy;
+    const price = data.price;
+    const bedroom = data.bedroom;
+    const toilet = data.toilet;
+    const bathroom = data.bathroom;
+    const serviced = data.serviced;
+    const minPrice = data.minRange;
+    const maxPrice = data.maxRange;
 
     searchPosts = posts.filter(function (post) {
       return (
         post.location.toLowerCase().includes(location.toLowerCase()) &&
         post.features.type === type &&
         post.features.serviced_apartment === serviced &&
-        post.features.price > minPrice &&
-        post.features.price < maxPrice &&
+        post.features.price > minPrice - 1 &&
+        post.features.price < maxPrice - 1 &&
         post.features.bathroom === bathroom &&
         post.features.bedroom === bedroom &&
         post.features.toilet === toilet &&
@@ -52,22 +43,12 @@ const Homepage = () => {
       );
     });
 
-    // if (searchPosts.length === 0) {
-    //   return console.log("No posts found");
-    // }
+    if (searchPosts.length === 0) {
+      return console.log("No posts found");
+    }
 
-    // return console.log(`all posts: ${allPosts}`);
+    return setPosts(searchPosts);
   };
-
-  console.log("all posts: " + allPosts, "search posts: " + searchPosts);
-
-  // setAllPosts(searchPosts);
-  // allPosts = searchPosts;
-  // console.log("all posts: " + allPosts, "search posts: " + searchPosts);
-
-  // useEffect(() => {
-  //   window.scroll(0, 0);
-  // }, []);
 
   return (
     <div className="homepage">
@@ -80,7 +61,7 @@ const Homepage = () => {
               <small>Your one stop to the home of your dreams.</small>
             </h4>
           </div>
-          <SearchCard posts={posts} />
+          <SearchCard posts={posts} handleSearch={handleSearch} />
         </div>
       </header>
       <WebsiteReviews />

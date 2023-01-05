@@ -5,15 +5,15 @@ import PostBadges from "../PostBadges/PostBadges";
 import { FaToilet, FaBath, FaBed, FaCar } from "react-icons/fa";
 import LikeButton from "../hooks/LikeButton/LikeButton";
 import PostTags from "../hooks/PostTags/PostTags";
-import PostCardTable from "../PostCardTable/PostCardTable";
+import PostCardTable from "../WebsiteReviews/PostCardTable/PostCardTable";
 import { useParams } from "react-router";
 import ApartmentReviews from "../ApartmentReviews/ApartmentReviews";
-import { posts } from "../../database/db";
+import { allPosts } from "../../database/db";
 
 const PostCard = () => {
   const { id } = useParams();
 
-  const post = posts[id - 1];
+  const post = allPosts[id - 1];
 
   return (
     <>
